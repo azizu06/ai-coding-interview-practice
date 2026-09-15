@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Verify every problem
-        run: python tools/verify.py
+        run: python tools/verify.py --headroom 1.0

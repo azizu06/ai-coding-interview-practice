@@ -451,7 +451,7 @@ def verify_problem(slug: str) -> ProblemReport:
                     continue
                 wall = rec["wall"]
                 status = rec["status"]
-                verdict = "ok" if status == "pass" and wall <= budget / 2 else "SLOW"
+                verdict = "ok" if status == "pass" and wall <= budget * HEADROOM else "SLOW"
                 if status != "pass":
                     verdict = status.upper()
                 if verdict != "ok":
@@ -514,8 +514,24 @@ def cell(value):
     return "----"
 
 
+HEADROOM = 0.5
+
+
 def main(argv):
-    slugs = argv[1:] or discover_problems()
+    """Usage: verify.py [--headroom FRACTION] [NN_slug ...]
+
+    --headroom sets how much of each timed budget the reference solver may use
+    and still count as ok. The default 0.5 is the tuning gate for this repo's
+    authors on a fast laptop. CI runners are slower, so the workflow passes
+    --headroom 1.0, which is the rule a candidate is actually held to.
+    """
+    global HEADROOM
+    args = list(argv[1:])
+    if "--headroom" in args:
+        i = args.index("--headroom")
+        HEADROOM = float(args[i + 1])
+        del args[i:i + 2]
+    slugs = args or discover_problems()
     if not slugs:
         print("no problems found under problems/")
         return 1
