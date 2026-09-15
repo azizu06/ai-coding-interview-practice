@@ -45,6 +45,13 @@ over:
 - Heavy fixtures for timed tests belong in `setUpClass`, so the measured wall time reflects
   the solver rather than data loading.
 
+`tools/run.py` leans on the same two conventions, because `run.py NN timed` reveals one
+timed test at a time by uncommenting exactly one commented-out block. It finds the timed
+tests by the `expected_time` assignment, and it expects them to sit in one commented block
+at the bottom of `class TestSolverSpeed`, in ladder order, hardest last. Put them anywhere
+else and `--list` will say so rather than guessing: problem 06 keeps its timed tests at the
+bottom of `TestSolver` and gets that note today. New problems should use `TestSolverSpeed`.
+
 ## Writing the problem README
 
 Copy the structure of an existing one, for example
@@ -81,6 +88,19 @@ temporary copy and will not catch a path that only breaks in place.
 python problems/05_route_planner/src/main.py
 python -m unittest discover -s problems/05_route_planner/src -v
 ```
+
+Then check that the session tools see the new problem the way a candidate will. `start`
+copies it into `workspace/`, which is git ignored, so this leaves `problems/` alone.
+
+```bash
+python tools/run.py 05 --list
+python tools/session.py start 05 --minutes 1
+python tools/run.py 05 timed
+python tools/session.py reset 05
+```
+
+`--list` should name every timed test in ladder order under `TestSolverSpeed`, all hidden,
+and `timed` should reveal the first one and nothing else.
 
 Before the solver is implemented, `test_solver.py` failing is the correct shipped state. The
 domain tests must pass.
