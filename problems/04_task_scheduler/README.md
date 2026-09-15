@@ -19,6 +19,10 @@ unlimited workers. Report a cycle when the dependencies make the job impossible.
 The `TaskGraph` class in `src/task_graph.py` stores tasks and dependencies. The `Solver`
 class in `src/solver.py` computes the order, the finish times and the cycle check.
 
+When `add_dependency("test", "compile")` is called, "test" depends on "compile". "compile"
+is a dependency of "test", and "test" is a dependent of "compile". A task can start only
+after every one of its dependencies has finished.
+
 Tasks and durations:
 
 ```
@@ -46,6 +50,11 @@ Earliest finish times with unlimited workers:
 ```
 fetch 2, compile 7, lint 3, package 9, test 11, deploy 14
 ```
+
+Every loader and generator in `src/task_data.py` returns the pair `(tasks, dependencies)`,
+where tasks is a list of `(name, duration)` and dependencies is a list of
+`(task, depends_on)`. The generated sets shuffle their names, so sorting the names
+alphabetically is not by itself a valid execution order.
 
 ## The codebase
 
@@ -99,8 +108,9 @@ the shipped state, not a broken checkout.
 
 ## Hints for using your AI well
 
-- Good prompt: give it the docstring definitions of dependency and dependent, then ask which
-  map each line of `add_dependency` updates and whether the direction matches.
+- Good prompt: give it the definitions of dependency and dependent from the top of this
+  file, then ask which map each line of `add_dependency` updates and whether the direction
+  matches.
 - Watch for: ask for a topological sort and you tend to get a recursive depth first search,
   which blows Python's stack on the 50000 task chain and ignores the alphabetical tie-break.
 - Test to tighten: build four tasks in a loop with one task hanging off it, assert

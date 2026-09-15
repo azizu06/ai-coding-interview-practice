@@ -7,7 +7,7 @@
 | **Difficulty** | Medium |
 | **Topics** | Social graphs, counting, top k |
 | **Files you edit** | `src/social_graph.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s to 1.5 s each |
+| **Timed budget** | 4 timed tests, 1.0 s to 2.5 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -56,7 +56,7 @@ user 1 and is not suggested. A user with no friends gets an empty list.
 
 The two largest graphs are not committed. They would be several megabytes of text, so
 `src/graph_data.py` rebuilds them from a fixed seed: 50000 users with about 10 friends each,
-and 8000 users with about 150 friends each.
+and 20000 users with about 150 friends each.
 
 ## Your tasks
 

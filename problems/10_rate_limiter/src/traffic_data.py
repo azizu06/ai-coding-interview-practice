@@ -1,24 +1,3 @@
-"""Loaders for the request logs and the limit tables.
-
-Only the small log is committed under ../data. The bigger ones would be many
-megabytes of text, so they are rebuilt here from fixed seeds. The same seed
-always produces the same lines.
-
-    get_example_*()   the tiny log used in README.md and main.py
-    get_small_*()     4000 requests from 300 clients over 60 seconds
-    get_medium_*()    40000 requests from 800 clients over 5 minutes
-    get_large_*()     300000 requests from 3000 clients over 10 minutes
-    get_hot_*()       120000 requests from 8 clients over 10 minutes
-
-Each loader comes in a `_limits` and a `_requests` flavour, and the two belong
-together: the limit table names every client in the matching log.
-
-The hot log is the small one of the two big ones. It exists because eight
-clients sending everything means each client's window holds hundreds of
-requests at a time, which is where re-reading the window per request falls
-apart.
-"""
-
 import os
 import random
 
@@ -60,11 +39,6 @@ def _stamp(millis):
 
 
 def generate(clients, count, span_ms, tier_weights, seed):
-    """Deterministic traffic: `count` requests from `clients` clients.
-
-    `tier_weights` picks how often each row of TIERS is handed out. Returns
-    (limit_lines, request_lines).
-    """
     rng = random.Random(seed)
     names = [f"c{index:05d}" for index in range(clients)]
 
@@ -75,7 +49,6 @@ def generate(clients, count, span_ms, tier_weights, seed):
         tiers.append(tier)
         limit_lines.append(f"{name} {tier[1]} {tier[2]} {tier[3]} {tier[4]}")
 
-    # Traffic is lopsided: a tenth of the clients send about half of it.
     heavy = max(1, clients // 10)
     pick_weights = [8.0 if index < heavy else 1.0 for index in range(clients)]
 

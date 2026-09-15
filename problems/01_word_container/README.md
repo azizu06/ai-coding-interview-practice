@@ -92,8 +92,8 @@ the shipped state, not a broken checkout.
 
 ## Hints for using your AI well
 
-- Good prompt: quote the `WordList` docstring, then ask which promise each method fails to
-  keep, instead of asking where the bugs are.
+- Good prompt: ask your agent to write out the validation rules `WordList` actually enforces,
+  then hold that list against what the tests expect, instead of asking where the bugs are.
 - Watch for: a containment check that counts a word as containing itself, and a solution
   built on the set of all substrings, which is quick on 25000 short words and falls over on
   the 1500 letter words in `words_long.txt`.

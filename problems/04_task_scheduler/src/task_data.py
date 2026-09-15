@@ -1,13 +1,3 @@
-"""Loaders for the task files in ../data, plus generators for the big sets.
-
-Each loader returns a pair `(tasks, dependencies)`:
-  * tasks is a list of (name, duration)
-  * dependencies is a list of (task, depends_on)
-
-The large, huge and long sets would be multi-megabyte files, so they are generated in
-memory from fixed seeds. `random_dag` and `chain` are also what data/gen_data.py uses.
-"""
-
 import os
 import random
 
@@ -15,7 +5,6 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"
 
 
 def random_dag(count, max_deps, seed):
-    """A random acyclic task graph. Names are shuffled so alphabetical order is not a valid order."""
     rng = random.Random(seed)
     width = len(str(count))
     names = [f"t{i:0{width}d}" for i in range(1, count + 1)]
@@ -30,7 +19,6 @@ def random_dag(count, max_deps, seed):
 
 
 def chain(count, seed):
-    """One long chain: every task depends on the task created just before it."""
     rng = random.Random(seed)
     width = len(str(count))
     names = [f"c{i:0{width}d}" for i in range(1, count + 1)]
@@ -56,7 +44,6 @@ def _read(name):
 
 
 def get_example_tasks():
-    """The build pipeline used in README.md and main.py."""
     tasks = [("fetch", 2), ("compile", 5), ("lint", 1), ("test", 4), ("package", 2), ("deploy", 3)]
     dependencies = [
         ("compile", "fetch"),
@@ -79,15 +66,12 @@ def get_medium_tasks():
 
 
 def get_large_tasks():
-    """20000 tasks, about 30000 dependencies."""
     return random_dag(20000, 3, seed=20260904)
 
 
 def get_huge_tasks():
-    """100000 tasks, about 150000 dependencies."""
     return random_dag(100000, 3, seed=20260905)
 
 
 def get_long_tasks():
-    """A single chain of 50000 tasks."""
     return chain(50000, seed=20260906)

@@ -94,7 +94,7 @@ the shipped state, not a broken checkout.
 
 ## Hints for using your AI well
 
-- Good prompt: quote the promise that equal weights are ordered by name, show the sort call,
+- Good prompt: say that items of equal weight should come back ordered by name, show the sort call,
   and ask what `reverse=True` does to the second element of the sort key.
 - Watch for: an assistant asked to solve bin packing reaches for the optimal, exponential
   answer; these tests only want first-fit decreasing quality.

@@ -114,12 +114,12 @@ class TestSolverSpeed(unittest.TestCase):
     #     self.assertLess(elapsed, expected_time, f"50000 users, 500 queries: {elapsed:.2f}s, need < {expected_time}s")
 
     # def test_dense_150_friends_each(self):
-    #     expected_time = 1.5
+    #     expected_time = 2.5
     #     start = time.perf_counter()
     #     total = shared_total(*self.dense)
     #     elapsed = time.perf_counter() - start
-    #     self.assertEqual(total, 145887)
-    #     self.assertLess(elapsed, expected_time, f"8000 users, 150 friends each: {elapsed:.2f}s, need < {expected_time}s")
+    #     self.assertEqual(total, 142426)
+    #     self.assertLess(elapsed, expected_time, f"20000 users, 150 friends each: {elapsed:.2f}s, need < {expected_time}s")
 
 
 if __name__ == "__main__":

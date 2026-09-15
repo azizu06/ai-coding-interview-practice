@@ -15,13 +15,33 @@
 Players are dealt seven cards and score the best five of them. Your job is to work out the
 score of a hand.
 
-The rules of the game live in `src/deck.py`. Read them. One of them is not the rule you are
-used to: in this game a FLUSH BEATS A FULL HOUSE. Do not let an assistant fill in a poker
-table from memory.
+A card is written as two characters, a rank then a suit.
 
-A score is a pair `(category, tiebreakers)`. The category is a number from 0 (high card) to
-8 (straight flush). The tiebreakers are a tuple of rank values ordered so that plain tuple
-comparison ranks two scores correctly, so `score_a > score_b` means hand A wins.
+```
+ranks  2 3 4 5 6 7 8 9 T J Q K A   (T is the ten, A is high)
+suits  c d h s                     (clubs diamonds hearts spades)
+```
+
+So `Ah` is the ace of hearts and `Td` is the ten of diamonds. Suits have no strength of
+their own, and they only decide flushes.
+
+The nine categories run weakest first from 0 to 8.
+
+```
+0 high card    1 one pair   2 two pair        3 three of a kind   4 straight
+5 full house   6 flush      7 four of a kind  8 straight flush
+```
+
+One of those is not the rule you are used to. In this game a FLUSH BEATS A FULL HOUSE. Do
+not let an assistant fill in a poker table from memory.
+
+A straight is five ranks in a row. The ace plays both high, T J Q K A, and low, A 2 3 4 5.
+The low one is called the wheel, and its high card counts as 5, so it is the weakest
+straight.
+
+A score is a pair `(category, tiebreakers)`. The tiebreakers are a tuple of rank values
+ordered so that plain tuple comparison ranks two scores correctly, so `score_a > score_b`
+means hand A wins.
 
 ```
 hand:  Ks Qs Js Ts 9s Kd Kc
@@ -46,7 +66,7 @@ Four spades are not a flush. Nothing else lines up, so this is a high card hand.
 | `data/hands_medium.txt` | 5000 hands |
 | `data/gen_data.py` | the script that produced the files above |
 | `src/main.py` | runnable demo |
-| `src/deck.py` | the card rules and the parser, read this first |
+| `src/deck.py` | the card parser and the flush and straight helpers |
 | `src/hand_data.py` | loaders, and the builders for the three big hand sets |
 | `src/solver.py` | the Solver stub you complete |
 | `src/test_deck.py` | unit tests for Deck |
@@ -95,8 +115,8 @@ the shipped state, not a broken checkout.
 
 ## Hints for using your AI well
 
-- Good prompt: tell it to restate the rules from `deck.py` in its own words and to use
-  nothing it already knows about poker rankings.
+- Good prompt: paste the rules from the section above, tell it to restate them in its own
+  words, and tell it to use nothing it already knows about poker rankings.
 - Watch for: a generated evaluator that ranks a full house above a flush, which throws off
   every category total by exactly the number of flushes and full houses in the file.
 - Test to tighten: score a hand with six cards of one suit to prove the best five survive,

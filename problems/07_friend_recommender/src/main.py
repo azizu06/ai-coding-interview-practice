@@ -19,7 +19,6 @@ def main():
     print()
     print(f"are 1 and 2 friends? {graph.are_friends(1, 2)}")
     print(f"are 1 and 5 friends? {graph.are_friends(1, 5)}")
-    # Probe: the docstring says an unknown user simply has no friends.
     try:
         print(f"friends of user 404, who is in no friendship: {graph.friends_of(404)}")
     except Exception as exc:  # noqa: BLE001

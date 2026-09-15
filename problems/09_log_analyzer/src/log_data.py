@@ -1,20 +1,3 @@
-"""Loaders for the request logs.
-
-Only the small log is committed under ../data. The three bigger logs would be
-tens of megabytes of text, so they are rebuilt here from fixed seeds. The same
-seed always produces the same lines.
-
-    get_example_lines()  the tiny log used in README.md and main.py
-    get_small_lines()    2000 requests over 10 minutes
-    get_medium_lines()   15000 requests over 1 hour
-    get_large_lines()    200000 requests over 4 hours
-    get_wide_lines()     200000 requests over 2 hours
-
-The wide log is not bigger than the large one. It exists because the timed test
-that uses it asks for long windows that overlap heavily, which is where a
-re-scan per window falls apart.
-"""
-
 import os
 import random
 
@@ -64,7 +47,6 @@ def _stamps(span):
 
 
 def generate_lines(count, span, seed):
-    """Deterministic log lines: `count` requests spread over `span` seconds."""
     rng = random.Random(seed)
     stamps = _stamps(span)
     times = sorted(rng.randrange(span) for _ in range(count))
@@ -72,7 +54,6 @@ def generate_lines(count, span, seed):
     for when in times:
         template, method, typical, tail = _SHAPES[rng.randrange(len(_SHAPES))]
         if "%d" in template:
-            # A mix of short and long ids, so collapsing them matters.
             ident = rng.randrange(1, 60) if rng.random() < 0.4 else rng.randrange(100, 99999)
             path = template % ident
         else:

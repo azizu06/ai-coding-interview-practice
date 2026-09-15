@@ -27,7 +27,8 @@ A-F a door; you may step onto it only while carrying the matching key
 
 You move one cell at a time: up, down, left or right. A picked-up key is kept forever, so
 every door of that letter stays open once you hold the key. You may walk over the same cell
-as many times as you like.
+as many times as you like. Cells are addressed as `(row, col)`, with `(0, 0)` in the top
+left corner.
 
 ```
 #########

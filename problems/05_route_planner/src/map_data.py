@@ -1,15 +1,3 @@
-"""Loaders for the map files in ../data, plus generators for the huge grid and the queries.
-
-Each map loader returns a pair `(stops, roads)`:
-  * stops is a list of stop names
-  * roads is a list of (a, b, minutes)
-
-Maps are grids: stop "r3c7" is row 3, column 7, and roads join horizontal and vertical
-neighbors with a random travel time from 1 to 9 minutes. The 300 by 300 grid would be a
-4 MB file, so it is generated in memory from a fixed seed. Queries are generated the same
-way. `grid` and `grid_queries` are also what data/gen_data.py uses.
-"""
-
 import os
 import random
 
@@ -34,7 +22,6 @@ def grid(rows, cols, seed):
 
 
 def grid_queries(rows, cols, count, max_steps, seed):
-    """(start, end) pairs. `max_steps` caps how far apart the two stops are on the grid."""
     rng = random.Random(seed)
     queries = []
     while len(queries) < count:
@@ -67,7 +54,6 @@ def _read(name):
 
 
 def get_example_map():
-    """The small town used in README.md and main.py."""
     stops = ["airport", "beach", "campus", "downtown", "harbor", "island"]
     roads = [
         ("airport", "downtown", 20),
@@ -85,17 +71,14 @@ def get_small_map():
 
 
 def get_medium_map():
-    """30 by 30 grid, 900 stops."""
     return _read("map_medium.txt")
 
 
 def get_large_map():
-    """100 by 100 grid, 10000 stops."""
     return _read("map_large.txt")
 
 
 def get_huge_map():
-    """300 by 300 grid, 90000 stops, generated in memory."""
     return grid(300, 300, seed=20260907)
 
 
@@ -108,10 +91,8 @@ def get_large_queries():
 
 
 def get_huge_queries():
-    """100 trips on the huge grid, each between stops at most 15 rows and columns apart."""
     return grid_queries(300, 300, 100, 15, seed=3)
 
 
 def get_huge_starts():
-    """200 starting stops on the huge grid for nearest-stop queries."""
     return grid_starts(300, 300, 200, seed=4)

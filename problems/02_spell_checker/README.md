@@ -94,8 +94,8 @@ the shipped state, not a broken checkout.
 
 ## Hints for using your AI well
 
-- Good prompt: paste the `Dictionary` docstring next to `normalize`, then ask for a step by
-  step trace of `normalize('Hello! ')` against the order the docstring promises.
+- Good prompt: paste `normalize` and ask for a step by step trace of `normalize('Hello! ')`,
+  one operation at a time, with the intermediate string after each one.
 - Watch for: a second normalizer written inside the solver that disagrees with `Dictionary`,
   and a suggestion to reach for a trie, which is a lot of code for a 50 minute slot and
   still loses to a deletion index here.

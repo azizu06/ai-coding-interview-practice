@@ -15,10 +15,26 @@
 You have a web server log and a question about it: over a sliding window, which endpoints
 are the slowest? Your job is to answer that question for every window in the log.
 
-The log format, the rule for turning a path into an endpoint, and the exact definition of
-p95 all live in `src/log_parser.py`. Read them first. The p95 here is nearest rank, not an
-interpolated percentile, so do not let an assistant swap in the formula it remembers from
-somewhere else.
+The log holds one request per line, five whitespace separated fields.
+
+```
+2026-03-01T10:15:32Z GET /api/orders/4812/items 200 137
+
+timestamp   ISO 8601, always UTC, always whole seconds, always 20 chars
+method      GET, POST, PUT, DELETE
+path        the requested path
+status      the HTTP status code
+latency_ms  how long the request took, in whole milliseconds
+```
+
+Two paths that differ only in an id are the same endpoint, so every numeric path segment
+collapses to the literal `{id}`. That makes `/api/orders/4812/items` into
+`/api/orders/{id}/items`, and `/api/users/7` into `/api/users/{id}`.
+
+The p95 of a group of latencies is nearest rank, not an interpolated percentile. Sort the
+latencies ascending and take the value at index `ceil(0.95 * n) - 1`, so a single request is
+its own p95 and a group of twenty takes the value at index 18, the second largest of the
+twenty. Do not let an assistant swap in the formula it remembers from somewhere else.
 
 `scan_windows(width, step, k)` walks a window of `width` seconds across the log, moving it
 forward `step` seconds at a time, and reports the `k` slowest endpoints in each window. The
@@ -55,7 +71,7 @@ is 60.
 | `data/log_small.txt` | 2000 requests over 10 minutes |
 | `data/gen_data.py` | the script that produced the file above |
 | `src/main.py` | runnable demo |
-| `src/log_parser.py` | the log format, endpoints and p95, read this first |
+| `src/log_parser.py` | `LogParser` and the p95 index helper |
 | `src/log_data.py` | loaders, and the builders for the three big logs |
 | `src/solver.py` | the Solver stub you complete |
 | `src/test_log_parser.py` | unit tests for LogParser |

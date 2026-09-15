@@ -1,5 +1,3 @@
-"""Loaders for the dictionaries and query lists in ../data."""
-
 import os
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
@@ -15,7 +13,6 @@ def _read(name, keep_spaces=False):
 
 
 def get_example_words():
-    """The tiny dictionary used in README.md and main.py."""
     return ["apple", "apply", "ample", "maple", "grape", "graph", "great", "treat", "tread", "bread"]
 
 
@@ -44,5 +41,4 @@ def get_huge_queries():
 
 
 def get_distance_two_queries():
-    """Queries that are up to two edits away from a word in the medium dictionary."""
     return _read("queries_distance_two.txt", keep_spaces=True)

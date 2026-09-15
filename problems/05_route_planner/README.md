@@ -49,6 +49,9 @@ campus 5, harbor 8, beach 11
 Maps are grids. The stop `r12c30` sits in row 12, column 30, and roads join it to its
 horizontal and vertical neighbours.
 
+Every map loader in `src/map_data.py` hands back a pair. The first half is a list of stop
+names and the second is a list of `(a, b, minutes)` roads.
+
 ## The codebase
 
 | File | What it holds |

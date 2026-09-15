@@ -1,18 +1,3 @@
-"""Loaders for the friendship data.
-
-The small and medium graphs are committed under ../data. The large and dense
-graphs would be several megabytes as text, so they are rebuilt here from fixed
-seeds. The same seed always produces the same graph.
-
-    get_example_graph()   the eight person graph from README.md
-    get_small_graph()     200 users, about 4 friends each
-    get_medium_graph()    2000 users, about 8 friends each
-    get_large_graph()     50000 users, about 10 friends each
-    get_dense_graph()     8000 users, about 150 friends each
-
-Each get_*_queries() returns the users to produce recommendations for.
-"""
-
 import os
 import random
 
@@ -106,8 +91,8 @@ def get_large_queries():
 
 
 def get_dense_graph():
-    return _cached("dense", lambda: SocialGraph(_build_pairs(8000, 150, seed=70003)))
+    return _cached("dense", lambda: SocialGraph(_build_pairs(20000, 150, seed=70003)))
 
 
 def get_dense_queries():
-    return _queries(8000, 400, seed=70004)
+    return _queries(20000, 400, seed=70004)

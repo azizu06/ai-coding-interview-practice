@@ -15,11 +15,40 @@
 An API gateway writes down every request it receives. Each client has a limit. Your job is
 to replay the log and say, for every request, whether the gateway should have let it through.
 
-Two rules run at once and a request has to satisfy both: a sliding window over the client's
-recent traffic, and a token bucket that refills over time. Both rules, the log format and
-the limit format are written out at the top of `src/request_log.py`. Read them first. Two
-details there are easy to assume your way past: the window counts every request, allowed or
-not, while only an allowed request spends tokens.
+The log holds one request per line, three whitespace separated fields.
+
+```
+12.5 c0042 2
+```
+
+The first field is when the request arrived, given as seconds since the log started and
+written as whole seconds, a dot, and one to three decimal digits. `12.5` is 12500 ms,
+`12.05` is 12050 ms, and `12.005` is 12005 ms. The second field is the client id. The third
+is the weight, how much the request costs, as a whole number of units.
+
+A second file holds the limits, one client per line, five fields.
+
+```
+c0042 10000 60 20 8
+```
+
+Those five are the client id, the width of the sliding window in milliseconds, the total
+weight allowed inside that window, the size of the token bucket in units, and the units the
+bucket regains per second. A client id of `*` stands for the limit every other client gets.
+
+Two rules run at once and a request has to satisfy both.
+
+The sliding window counts every request inside the window against the limit, allowed or not,
+because the window measures how hard the client is knocking. A request of weight w arriving
+at time t is within the rule when the weight of the requests in the window ending at t, this
+one included, is at most `max_weight`. The window is half open. It ends at the arriving
+request and does not include its own far edge, so a request exactly `window_ms` older than
+the arrival has already left the window.
+
+The token bucket starts full at `capacity` and regains `refill_per_sec` units per second,
+never going above `capacity`. A request of weight w is within the rule when the bucket holds
+at least w units at that moment. Only an allowed request spends its w units, and a request
+turned away by either rule spends nothing.
 
 ```
 limits (client, window_ms, max_weight, capacity, refill_per_sec):
@@ -54,7 +83,7 @@ own, so she gets the default bucket of 2 units and cannot afford a weight 3 requ
 | `data/limits_small.txt` | the limit for each of those clients |
 | `data/gen_data.py` | the script that produced the files above |
 | `src/main.py` | runnable demo |
-| `src/request_log.py` | the log format, the limits and the two rules, read this first |
+| `src/request_log.py` | the `RequestLog` class, which parses the log and the limits |
 | `src/traffic_data.py` | loaders, and the builders for the three big logs |
 | `src/solver.py` | the Solver stub you complete |
 | `src/test_request_log.py` | unit tests for RequestLog |

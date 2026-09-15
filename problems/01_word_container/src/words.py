@@ -1,5 +1,3 @@
-"""Loaders for the word files in ../data."""
-
 import os
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
@@ -12,7 +10,6 @@ def _read(name):
 
 
 def get_example_words():
-    """The tiny list used in README.md and main.py."""
     return ["cat", "concatenate", "dog", "hotdog", "sun", "sunny", "ate", "plate", "ten"]
 
 
@@ -33,5 +30,4 @@ def get_huge_words():
 
 
 def get_long_words():
-    """Thirty words, most of them about a thousand letters long."""
     return _read("words_long.txt")

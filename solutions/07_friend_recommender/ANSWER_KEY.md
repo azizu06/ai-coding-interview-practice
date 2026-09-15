@@ -32,8 +32,8 @@ intersects friend lists. Cost per query is `O(N log N)` to build the sorted
 user list plus `O(N * d)` for the intersections.
 
 It passes the 200 user and 2000 user timed tests (17 ms on medium). It needs
-about 6.2 s on the 50000 user graph and about 5.1 s on the dense graph, against
-budgets of 1.0 s and 1.5 s.
+about 6.2 s on the 50000 user graph, and the verifier kills it on the dense graph
+after 9.5 s, against budgets of 1.0 s and 2.5 s.
 
 ## Optimization ladder
 
@@ -55,7 +55,7 @@ dense graph there are thousands of candidates per query and each one scans a
 150 entry list, so the filter costs `O(candidates * d)` and swamps the counting.
 
 Cost: `O(d^2 + candidates * d)` per query. Passes small, medium and large.
-Breaks on `test_dense_150_friends_each`: about 2.1 s against a 1.5 s budget.
+Breaks on `test_dense_150_friends_each`: about 3.5 s against a 2.5 s budget.
 See `fof_list_solver.py`.
 
 ### Rung 3: hoist the friend set, count in C, take the top k with a heap
@@ -69,7 +69,7 @@ Three changes, in order of how much they matter:
 * take the top `limit` with `heapq.nsmallest` on `(-shared, candidate)` instead
   of sorting every candidate
 
-Cost: `O(d^2 + candidates)` per query. About 0.41 s on the dense graph and 7 ms
+Cost: `O(d^2 + candidates)` per query. About 0.5 s on the dense graph and 7 ms
 on the large graph. Reference: `solver.py`.
 
 ## Timed test summary (measured on this machine)
@@ -79,14 +79,14 @@ on the large graph. Reference: `solver.py`.
 | small | 200 users, 30 queries | 1.0 s | 0.00 s | 0.00 s | 0.00 s |
 | medium | 2000 users, 60 queries | 1.0 s | 0.02 s | 0.00 s | 0.00 s |
 | large | 50000 users, 500 queries | 1.0 s | 6.2 s | 0.01 s | 0.01 s |
-| dense | 8000 users x 150 friends, 400 queries | 1.5 s | 5.1 s | 2.1 s | 0.41 s |
+| dense | 20000 users x 150 friends, 400 queries | 2.5 s | killed at 9.5 s | 3.5 s | 0.5 s |
 
 ## Good AI prompts
 
 1. "Read social_graph.py and list every promise the class docstring makes, then
    show me the line that enforces each one. Which promise has no line?"
-2. "Here is my recommend(). On a graph with 8000 users and 150 friends each it
-   takes 2.1 s for 400 queries, but on 50000 users with 10 friends each it takes
+2. "Here is my recommend(). On a graph with 20000 users and 150 friends each it
+   takes 3.5 s for 400 queries, but on 50000 users with 10 friends each it takes
    0.01 s for 500 queries. Which line has a cost that depends on both the
    candidate count and the degree?"
 3. "Rewrite this candidate loop so that excluding existing friends is a constant
