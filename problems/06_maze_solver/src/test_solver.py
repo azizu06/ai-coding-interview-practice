@@ -58,8 +58,6 @@ class TestSolver(unittest.TestCase):
     #     self.assertEqual(solve(text), expected)
 
     # def test_must_backtrack_through_visited_cells(self):
-    #     # The key sits at a dead end behind the start. Cells near S are
-    #     # walked twice: once to fetch the key, once on the way to the door.
     #     text = """
     #     a...S.AG
     #     """

@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Social graphs, counting, top k |
 | **Files you edit** | `src/social_graph.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s to 2.5 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -94,17 +92,7 @@ python -m unittest test_social_graph -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: hand it both timings, 0.01 s for 500 queries on 50000 sparse users and 2.1 s
-  for 400 queries on 8000 dense ones, and ask which line costs candidates times degree.
-- Watch for: excluding existing friends with `candidate in graph.friends_of(user)`, a linear
-  list scan that costs nothing on a sparse graph and everything on a dense one.
-- Test to tighten: build two candidates with an identical shared count and assert the
-  smaller user id is ranked first.
-
 ---
 
-Spoilers ahead: [`../../solutions/07_friend_recommender/ANSWER_KEY.md`](../../solutions/07_friend_recommender/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/07_friend_recommender/ANSWER_KEY.md`](../../solutions/07_friend_recommender/ANSWER_KEY.md).
+Do not open it until your timer is done.

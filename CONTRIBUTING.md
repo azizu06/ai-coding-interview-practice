@@ -42,6 +42,13 @@ over:
   method name.
 - A timed test contains `expected_time = <seconds>`. That number is the budget the verifier
   holds the reference solver and the brute force solver to.
+- Set `expected_time` to at least four times the reference solver's wall time on your own
+  machine. The GitHub runner is about three times slower than a developer laptop, so a
+  budget that feels comfortable locally goes red in CI. Then confirm the next rung down the
+  optimization ladder still overruns that budget on the runner. If the only way to keep the
+  reference safe is to widen the budget until the rung below it also fits, scale the fixture
+  up instead. Problem 07's dense timed test is the worked example: 20000 users at 150
+  friends each, budget 2.5 s.
 - Heavy fixtures for timed tests belong in `setUpClass`, so the measured wall time reflects
   the solver rather than data loading.
 
@@ -57,13 +64,29 @@ bottom of `TestSolver` and gets that note today. New problems should use `TestSo
 Copy the structure of an existing one, for example
 [`problems/05_route_planner/README.md`](problems/05_route_planner/README.md). In order:
 title, one-line pitch in italics, the key-value table, "The problem" with a worked example,
-"The codebase" as a file table, "Your tasks" as six steps tagged by phase, "How to run",
-"Hints for using your AI well", and the spoiler link to the answer key.
+"The codebase" as a file table, "Your tasks" as six steps tagged by phase, "How to run", and
+the spoiler link to the answer key.
 
-The three hints are the part worth spending time on. They should be specific to this
-problem: what a good prompt looks like here, what an assistant reliably gets wrong here, and
-which test is worth tightening. Write them after you have solved the problem with an agent,
-not before.
+The key-value table holds three rows and no others: Difficulty, Files you edit, Suggested
+time. No Topics row, no timed budget row. The codebase table describes each file by size and
+role, rows or items or users, and says nothing about what the fixture is built to stress.
+The spoiler link is the link and then "Do not open it until your timer is done.", with no
+description of what the answer key holds.
+
+The minute-zero rule: `problems/` may contain nothing that names an algorithm, a bug count
+beyond the task list's "has two bugs", a bug location, a mechanism, or an expected value. The
+instructions panel in the mock interview video is the reference for how much a candidate
+sees when the clock starts, and everything beyond that belongs in `solutions/`.
+
+Shipped-state comment check, which is the same rule applied to the source: every domain file
+carries the one-line module docstring `"""Read this first."""` and nothing else by way of
+prose, `main.py` carries only its own one-line docstring, and a fixture or loader file may
+carry a column-label comment, for example
+`# name, window_ms, max_weight, capacity, refill_per_sec`. The solver stub keeps the
+docstring that states what the function must return, and points at `README.md` rather than
+at prose in another file. Tests carry no comment that explains why a test exists, what the
+bug is, or what approach passes; a one-line scenario docstring on a test method is fine when
+it states the scenario and not the mechanism.
 
 House style: straight quotes, no em dashes or en dashes, no email addresses anywhere in the
 repository.

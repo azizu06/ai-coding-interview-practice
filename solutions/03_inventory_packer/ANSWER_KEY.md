@@ -2,10 +2,11 @@
 
 ## The two bugs in `Inventory`
 
-1. `add_item` accepts a weight of zero. The guard reads `weight < 0` but the docstring says
-   weights are positive, so it must be `weight <= 0`. `test_rejects_zero_weight` and
-   `test_constructor_skips_invalid_pairs` expose it; `main.py` prints `True` for the
-   zero-weight "ghost" item.
+1. `add_item` accepts a weight of zero. The guard reads `weight < 0`, but an item that
+   weighs nothing is not an item: the commented-out `test_rejects_zero_weight` asserts the
+   inventory is still empty after one is added, and `test_constructor_skips_invalid_pairs`
+   counts a `("ghost", 0)` pair out. Fix: `weight <= 0`. `main.py` prints `True` for the
+   zero-weight "ghost" item, which is the same failure without running a test.
 2. `items_by_weight` orders equal weights by name descending. It sorts on
    `(weight, name)` with `reverse=True`, which reverses the name order along with the
    weight order. Fix: sort on `(-weight, name)` without `reverse`.
@@ -39,9 +40,9 @@ than the accepted bound in the tests.
 
 ## Good AI prompts
 
-1. "The docstring says equal weights are ordered by name. Show me the sort call and explain
-   what reverse=True does to the second key of the tuple." (Names the invariant and the
-   suspicious line.)
+1. "test_equal_weights_are_ordered_by_name says items of equal weight come back ordered by
+   name. Show me the sort call in items_by_weight and explain what reverse=True does to the
+   second element of the sort key." (Names the invariant and the suspicious line.)
 2. "My first-fit decreasing scans every open box per item and takes 5 s on 40000 items.
    Boxes only differ by how much room is left. Propose a structure keyed by remaining room
    and tell me its cost per item when capacity is 100 and when it is 100000." (Forces the

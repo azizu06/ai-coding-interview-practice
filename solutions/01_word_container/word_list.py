@@ -31,7 +31,7 @@ class WordList:
             self._words.append(word)
 
     def is_valid_word(self, word):
-        """Return True when `word` follows the rules in the class docstring."""
+        """Return True when `word` is one or more lowercase letters and not too long."""
         if len(word) == 0:
             return False
         if len(word) > self.max_length:

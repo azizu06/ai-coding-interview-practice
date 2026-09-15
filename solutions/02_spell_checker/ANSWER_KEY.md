@@ -2,10 +2,13 @@
 
 ## The two bugs in `Dictionary`
 
-1. `normalize` strips punctuation before whitespace. The docstring promises whitespace
-   first, then punctuation. With the wrong order `"Hello! "` becomes `"hello!"` because the
-   trailing space shields the exclamation mark. Fix: `word.strip().strip(PUNCTUATION).lower()`.
-   `test_punctuation_then_whitespace` and `test_whitespace_around_quotes` expose it.
+1. `normalize` strips punctuation before whitespace. The README says the class strips
+   surrounding whitespace and surrounding punctuation, and the live tests show each of
+   those working on its own, so the two together have to work as well. With the wrong order
+   `"Hello! "` becomes `"hello!"`, because the trailing space shields the exclamation mark
+   from `strip(PUNCTUATION)`. Fix: `word.strip().strip(PUNCTUATION).lower()`. The
+   commented-out `test_punctuation_then_whitespace` and `test_whitespace_around_quotes`
+   expose it.
 2. `add_word` stores a word that is blank after normalizing. `Dictionary(["apple", "", "!"])`
    ends up with two entries and `is_word("")` returns True. Fix: return False when the
    normalized word is empty. `test_blank_words_are_not_stored`,
@@ -38,9 +41,10 @@ medium dictionary (about 190000 keys, 0.05 s).
 
 ## Good AI prompts
 
-1. "Here is the Dictionary docstring and the normalize implementation. Walk through
-   normalize('Hello! ') step by step and tell me where the output stops matching the
-   docstring." (Concrete input, concrete contract.)
+1. "Here is normalize() and the live tests in test_dictionary.py. Trace
+   normalize('Hello! ') one operation at a time, showing the intermediate string after
+   each one, and tell me where the result stops matching what the README says the class
+   does." (Concrete input, concrete evidence.)
 2. "Generating all two-edit variants of a query is 200000 strings. Is there an index over
    the dictionary that lets me find words within two edits with far fewer lookups? Explain
    the invariant that makes it correct before writing code." (Asks for the idea and the

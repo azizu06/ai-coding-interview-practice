@@ -3,10 +3,13 @@
 ## The two bugs in `SocialGraph`
 
 1. `add_friendship` builds the `edge` tuple and adds it to `self._known`, but
-   it never checks whether the edge was already there. The docstring promises
-   that adding the same friendship twice changes nothing, so the guard is
-   missing. Every repeated pair appends another copy to both friend lists,
-   which inflates degrees and double counts shared friends. Fix:
+   it never checks whether the edge was already there, so the guard that makes
+   a repeated friendship a no-op is missing. The commented-out
+   `test_duplicate_friendship_is_ignored` and `test_repeats_do_not_inflate_degree`
+   are where that rule is written down, and `_known` being a set of normalized
+   pairs is the hint that repeats were meant to be caught. Every repeated pair
+   appends another copy to both friend lists, which inflates degrees and double
+   counts shared friends. Fix:
 
    ```python
    if edge in self._known:
@@ -17,8 +20,10 @@
    Caught by `test_duplicate_friendship_is_ignored` and
    `test_repeats_do_not_inflate_degree`.
 2. `friends_of` uses `self._friends[user]`, which raises `KeyError` for a user
-   who never appeared in a friendship. The class docstring says an unseen user
-   simply has no friends. Fix: `return self._friends.get(user, [])`. This also
+   who never appeared in a friendship. The README says a user with no friends
+   gets an empty list, and `__contains__` already answers for an unseen user
+   without raising, so `friends_of` should too. Fix:
+   `return self._friends.get(user, [])`. This also
    repairs `degree`, which is written in terms of `friends_of`. Caught by
    `test_unknown_user_has_no_friends` and `test_degree_of_unknown_user_is_zero`,
    and visible in `main.py`, which asks for the friends of user 404.
@@ -83,18 +88,22 @@ on the large graph. Reference: `solver.py`.
 
 ## Good AI prompts
 
-1. "Read social_graph.py and list every promise the class docstring makes, then
-   show me the line that enforces each one. Which promise has no line?"
+1. "Here are the commented-out tests in test_social_graph.py. For each one, show
+   me the line in social_graph.py that would make it pass, and say which of them
+   has no such line."
 2. "Here is my recommend(). On a graph with 20000 users and 150 friends each it
    takes 3.5 s for 400 queries, but on 50000 users with 10 friends each it takes
    0.01 s for 500 queries. Which line has a cost that depends on both the
    candidate count and the degree?"
 3. "Rewrite this candidate loop so that excluding existing friends is a constant
    time test, and take only the top 10 without sorting every candidate."
+4. "Add a test with two candidates that share the same number of friends with the
+   query user, and assert the smaller user id is ranked first." (Pins the
+   tie-break, which the shipped tests only touch in passing.)
 
 ## Bad AI prompts
 
-1. "Fix the bugs in social_graph.py." (No contract to check against, so the
+1. "Fix the bugs in social_graph.py." (Nothing to check the code against, so the
    agent guesses and may rewrite the insertion order behaviour the tests rely on.)
 2. "Make the dense test pass." (Invites raising the budget or trimming the
    candidate set in a way that changes the answer.)

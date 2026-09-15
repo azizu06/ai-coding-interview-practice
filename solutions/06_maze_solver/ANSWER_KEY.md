@@ -75,6 +75,9 @@ is updated or checked at the right moment.
 3. "The huge maze has six keys in the open, so `(cell, mask)` BFS explores
    about 4 million states. Sketch an approach whose cost depends on the
    number of keys and doors rather than the number of cells times 2^K."
+4. "Add a test with a maze whose only route to `G` runs through a door whose
+   key is sealed behind walls, and assert the answer is `-1`." (Tightens the
+   unreachable case, which a solver can pass by accident.)
 
 ## Bad AI prompts
 

@@ -21,7 +21,7 @@ class Dictionary:
 
     @staticmethod
     def normalize(word):
-        """Return the canonical form of `word` as described in the class docstring."""
+        """Strip surrounding whitespace, then surrounding punctuation, then lowercase."""
         return word.strip().strip(PUNCTUATION).lower()
 
     def add_word(self, word):

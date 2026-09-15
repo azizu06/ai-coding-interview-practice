@@ -6,7 +6,7 @@ class Solver:
         self.maze = maze
 
     def shortest_path(self):
-        """Fewest steps from S to E, picking up keys as needed.
+        """Fewest steps from S to G, picking up keys as needed.
 
         Return -1 when the exit cannot be reached.
         """

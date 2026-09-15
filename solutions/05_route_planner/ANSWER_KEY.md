@@ -3,17 +3,18 @@
 ## The two bugs in `RoadMap`
 
 1. `add_road` only writes one direction. It does `self._roads[a][b] = minutes` and never
-   `self._roads[b][a] = minutes`, so every road is one way even though the docstring says
-   roads connect both stops. Fix: write both entries. `test_roads_are_two_way`,
+   `self._roads[b][a] = minutes`, so every road is one way even though the README calls the
+   roads two-way. Fix: write both entries. `test_roads_are_two_way`,
    `test_neighbors_include_every_road` and `test_road_count_counts_each_road_once` all
    expose it. `road_count` divides the total link count by two, so with one-way roads it
    reports half the real number, which is the loudest signal. `main.py` also prints
    `direct downtown to airport: None` right under a road it just added.
 2. `add_road` lets a later road overwrite an earlier one even when the later one is
-   slower. The docstring says the faster time wins when the same pair is added again. Fix:
-   read the current value first and only write when there is none or the new time is
-   smaller. `test_faster_road_wins` exposes it, and `main.py` re-adds airport to downtown
-   at 30 minutes and then prints 30 where it should print 20.
+   slower. The commented-out `test_faster_road_wins` is where the rule is written down: it
+   adds a slower road over an existing pair, then a faster one, and asks what
+   `travel_time` reports after each. Fix: read the current value first and only write when
+   there is none or the new time is smaller. `main.py` re-adds airport to downtown at 30
+   minutes and then prints 30 where it should print 20.
 
 Both bugs hide in the same three lines, which is the point. The first one is visible from
 any traversal; the second one only shows up when a pair of stops is given two roads, which
@@ -64,10 +65,10 @@ already breaks ties by name because it holds `(minutes, stop)` tuples.
 
 ## Good AI prompts
 
-1. "The RoadMap docstring says roads are two way and that the faster time wins on a repeat
-   add. Walk me through add_road line by line and tell me which of those two sentences the
-   code actually implements." (Names the contract, asks for a comparison against it,
-   instead of asking where the bug is.)
+1. "The README calls the roads two way, and test_faster_road_wins expects a repeat add to
+   keep the faster time. Walk me through add_road line by line and tell me which of those
+   two the code actually implements." (Names the behavior being claimed, asks for a
+   comparison against it, instead of asking where the bug is.)
 2. "Give me a concise list of options for answering 100 shortest-path queries on a 90000
    stop grid where the two stops are always within fifteen blocks of each other. Do not
    write code yet." (The "within fifteen blocks" detail is the whole problem, and asking

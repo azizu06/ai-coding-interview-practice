@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Easy |
-| **Topics** | Greedy algorithms, bin packing |
 | **Files you edit** | `src/inventory.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -16,9 +14,9 @@ A warehouse has a pile of items, each with an integer weight, and an unlimited s
 identical boxes that hold at most `capacity` weight. Pack every item into boxes using as
 few boxes as you reasonably can.
 
-Finding the true minimum is hard in general, so the tests accept any valid packing that
-uses no more boxes than the classic "first-fit decreasing" strategy: sort items heaviest
-first, and drop each one into the first box that has room, opening a new box when none does.
+Finding the true minimum is hard in general, so the tests do not ask for it. A packing is
+accepted when every item sits in exactly one box, no box holds more than `capacity`, and
+the number of boxes is at or below the count the test expects.
 
 The `Inventory` class in `src/inventory.py` stores items and hands them back sorted. The
 `Solver` class in `src/solver.py` does the packing.
@@ -92,17 +90,7 @@ python -m unittest test_inventory -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: say that items of equal weight should come back ordered by name, show the sort call,
-  and ask what `reverse=True` does to the second element of the sort key.
-- Watch for: an assistant asked to solve bin packing reaches for the optimal, exponential
-  answer; these tests only want first-fit decreasing quality.
-- Test to tighten: assert every item name appears exactly once across all boxes and no box
-  exceeds capacity, then run that check on the 200000 item set.
-
 ---
 
-Spoilers ahead: [`../../solutions/03_inventory_packer/ANSWER_KEY.md`](../../solutions/03_inventory_packer/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/03_inventory_packer/ANSWER_KEY.md`](../../solutions/03_inventory_packer/ANSWER_KEY.md).
+Do not open it until your timer is done.

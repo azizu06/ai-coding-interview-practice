@@ -20,8 +20,6 @@ from traffic_data import (  # noqa: E402
     get_small_requests,
 )
 
-# ada has a window of 1000 ms holding weight 4, and a bucket of 3 units that
-# regains 1 unit per second.
 EDGE_REQUESTS = [
     "0.0 ada 2",
     "0.1 ada 1",
@@ -51,8 +49,6 @@ class TestSolverCorrectness(unittest.TestCase):
         )
 
     def test_a_denied_request_spends_nothing(self):
-        # The weight 3 request is turned away, so the bucket still holds enough
-        # for the weight 1 request right behind it.
         self.assertEqual(decide(["0.0 cy 3", "0.01 cy 1"]), [False, True])
 
     def test_clients_do_not_share_a_bucket(self):
@@ -76,8 +72,6 @@ class TestSolverCorrectness(unittest.TestCase):
     #     self.assertEqual(decide(EDGE_REQUESTS), expected)
 
     # def test_the_two_rules_interact(self):
-    #     # ada's last request has a token waiting for it, but too many
-    #     # requests inside the window.
     #     expected = "????"
     #     self.assertEqual(decide(get_example_requests()), expected)
 

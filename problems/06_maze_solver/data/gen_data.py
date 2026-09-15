@@ -3,10 +3,10 @@
 Layout of every generated maze:
   * random walls on an open field (wall density differs per size)
   * S in the top left area
-  * a vault in the bottom right holding G; its entrance is a corridor of
-    doors, one per key, so every key is needed to reach G
-  * keys either lying in the open (scattered=True) or each locked inside a
-    small room whose door needs the previous key (scattered=False)
+  * a vault in the bottom right holding G, entered through a corridor of
+    doors, one per key
+  * keys either lying in the open (scattered=True) or each placed inside a
+    small room behind a door (scattered=False)
 """
 
 import os

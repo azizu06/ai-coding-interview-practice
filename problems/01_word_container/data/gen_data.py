@@ -38,7 +38,7 @@ def build_words(rng, count, low, high, planted_share):
 
 
 def build_long_words(rng):
-    """Thirty words, most of them well over a thousand letters. Six of them wrap one of the shorter ones."""
+    """Thirty words, most of them well over a thousand letters."""
     short = [random_word(rng, 300, 500) for _ in range(10)]
     long_words = [random_word(rng, 1700, 1999) for _ in range(14)]
     wrapped = []

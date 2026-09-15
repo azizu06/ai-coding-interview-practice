@@ -3,16 +3,19 @@
 ## The two bugs in `Deck`
 
 1. `flush_suit` returns a suit once it sees four cards of it: `if count >= 4`.
-   The docstring says five or more. With the bug, more than half of all seven
-   card hands are reported as flushes, and the tiebreaker tuple only has four
-   ranks in it. Fix: `if count >= 5`. Caught by
+   A flush is five or more: the README's second worked example scores
+   `As Ks 9s 4s 7h 2d 3c` as a high card hand and says outright that four
+   spades are not a flush, and the live `test_five_of_a_suit` and
+   `test_two_of_a_suit_is_nothing` bracket the boundary from either side. With
+   the bug, more than half of all seven card hands are reported as flushes, and
+   the tiebreaker tuple only has four ranks in it. Fix: `if count >= 5`. Caught by
    `test_four_of_a_suit_is_not_a_flush` and
    `test_four_and_three_is_still_not_a_flush`, and again in the solver tests by
    `test_four_of_a_suit_is_only_a_high_card`.
 2. `straight_high` never handles the wheel. It sorts the distinct ranks and
    looks for a run of five, which finds every straight except A 2 3 4 5, since
-   the ace sorts as 14 rather than 1. The class docstring says the wheel is a
-   straight with a high card of 5. Fix, after the run loop:
+   the ace sorts as 14 rather than 1. The README says the ace plays low as well
+   as high and that the wheel's high card counts as 5. Fix, after the run loop:
 
    ```python
    if best == 0 and {14, 2, 3, 4, 5}.issubset(distinct):
@@ -94,14 +97,18 @@ enumeration is what mattered and the table is the polish.
 
 ## Good AI prompts
 
-1. "Read deck.py and write down the rules of this game in your own words,
-   including anything that differs from standard poker. Do not use anything you
-   already know about poker hand rankings."
+1. "Here are the rules from README.md. Restate them in your own words, including
+   anything that differs from standard poker, and then say which of them deck.py
+   already implements. Do not use anything you already know about poker hand
+   rankings."
 2. "Given seven cards, prove that I never need to look at the 21 five card
    subsets: for each category, show which five of the seven are forced."
 3. "My evaluator spends most of its time in straight_high, which sorts a set on
    every call. The only input that matters is which of the 13 ranks are present.
    Turn that into a lookup keyed on a 13 bit mask."
+4. "Add two tests: a hand with six cards of one suit, to prove the best five
+   survive, and a wheel, A 2 3 4 5, to prove the ace plays low." (Both are cases
+   a generated evaluator gets wrong quietly.)
 
 ## Bad AI prompts
 
@@ -109,5 +116,5 @@ enumeration is what mattered and the table is the polish.
    full houses come out swapped and every category total is wrong.)
 2. "Speed up score_five." (The scorer was never the problem; calling it 21 times
    per hand was.)
-3. "Fix the bugs in deck.py." (No contract in the prompt, so the agent may
-   decide four to a flush is intentional or that the ace should not play low.)
+3. "Fix the bugs in deck.py." (No rules in the prompt, so the agent may decide
+   four to a flush is intentional or that the ace should not play low.)

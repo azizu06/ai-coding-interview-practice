@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Easy |
-| **Topics** | Edit distance, indexing |
 | **Files you edit** | `src/dictionary.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -92,18 +90,7 @@ python -m unittest test_dictionary -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: paste `normalize` and ask for a step by step trace of `normalize('Hello! ')`,
-  one operation at a time, with the intermediate string after each one.
-- Watch for: a second normalizer written inside the solver that disagrees with `Dictionary`,
-  and a suggestion to reach for a trie, which is a lot of code for a 50 minute slot and
-  still loses to a deletion index here.
-- Test to tighten: add a case proving a word two substitutions away is found, not only one
-  edit away.
-
 ---
 
-Spoilers ahead: [`../../solutions/02_spell_checker/ANSWER_KEY.md`](../../solutions/02_spell_checker/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/02_spell_checker/ANSWER_KEY.md`](../../solutions/02_spell_checker/ANSWER_KEY.md).
+Do not open it until your timer is done.

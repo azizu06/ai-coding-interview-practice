@@ -80,7 +80,6 @@ class TestSolverCorrectness(unittest.TestCase):
 
 # Timed tests. Uncomment them for task 6.
 # Each one starts a clock, packs the inventory, and checks the elapsed time and the box count.
-# The box count must be at most what first-fit decreasing produces on that file.
 
 class TestSolverSpeed(unittest.TestCase):
     @classmethod

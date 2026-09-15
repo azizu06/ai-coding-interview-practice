@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Hard |
-| **Topics** | Sliding windows, token buckets |
 | **Files you edit** | `src/request_log.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -91,9 +89,7 @@ own, so she gets the default bucket of 2 units and cannot afford a weight 3 requ
 
 The three bigger logs are not committed, since as text they would be many megabytes.
 `src/traffic_data.py` rebuilds them from fixed seeds: 40000 requests from 800 clients,
-300000 requests from 3000 clients, and 120000 requests from only eight clients. That last
-one is the smaller of the two big logs, but with eight clients sharing it every client's
-window is crowded.
+300000 requests from 3000 clients, and 120000 requests from eight clients.
 
 ## Your tasks
 
@@ -131,17 +127,7 @@ python -m unittest test_request_log -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: ask it to restate the two rules as a decision procedure for a single request,
-  explicit about which requests count toward the window and which ones spend tokens.
-- Watch for: counting only allowed requests in the window, and draining the bucket on a
-  denied request. Both are reasonable guesses and both are the opposite of the rules here.
-- Test to tighten: send a request exactly `window_ms` after an earlier one and assert the
-  earlier one has already left, because the window is half open.
-
 ---
 
-Spoilers ahead: [`../../solutions/10_rate_limiter/ANSWER_KEY.md`](../../solutions/10_rate_limiter/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/10_rate_limiter/ANSWER_KEY.md`](../../solutions/10_rate_limiter/ANSWER_KEY.md).
+Do not open it until your timer is done.

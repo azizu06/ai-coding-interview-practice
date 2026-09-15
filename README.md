@@ -204,42 +204,37 @@ timed tests in TestSolverSpeed:
 
 ## The problems
 
-| # | Problem | Difficulty | Topics | Optimization ladder |
-| --- | --- | --- | --- | --- |
-| 01 | [Word Container](problems/01_word_container/) | Medium | Strings, sets, tries | pairs, substrings, trie |
-| 02 | [Spell Checker](problems/02_spell_checker/) | Easy | Edit distance, indexing | scan, variants, index |
-| 03 | [Inventory Packer](problems/03_inventory_packer/) | Easy | Greedy algorithms, bin packing | scan, buckets, bisect |
-| 04 | [Task Scheduler](problems/04_task_scheduler/) | Medium | Graphs, topological order | rescan, Kahn, sweep |
-| 05 | [Route Planner](problems/05_route_planner/) | Medium | Weighted graphs, Dijkstra | scan, heap, early exit |
-| 06 | [Maze Solver](problems/06_maze_solver/) | Medium | Grid BFS, state search | revisit, states, waypoints |
-| 07 | [Friend Recommender](problems/07_friend_recommender/) | Medium | Social graphs, counting, top k | scan, two hops, hoist |
-| 08 | [Card Game](problems/08_card_game/) | Medium | Enumeration, precomputed tables | subsets, table, seven cards |
-| 09 | [Log Analyzer](problems/09_log_analyzer/) | Medium-Hard | Sliding windows, percentiles | rescan, bisect, carry |
-| 10 | [Rate Limiter](problems/10_rate_limiter/) | Hard | Sliding windows, token buckets | rescan, deque, running total |
+| # | Problem | Difficulty | Suggested time |
+| --- | --- | --- | --- |
+| 01 | [Word Container](problems/01_word_container/) | Medium | 50 min |
+| 02 | [Spell Checker](problems/02_spell_checker/) | Easy | 50 min |
+| 03 | [Inventory Packer](problems/03_inventory_packer/) | Easy | 50 min |
+| 04 | [Task Scheduler](problems/04_task_scheduler/) | Medium | 50 min |
+| 05 | [Route Planner](problems/05_route_planner/) | Medium | 50 min |
+| 06 | [Maze Solver](problems/06_maze_solver/) | Medium | 50 min |
+| 07 | [Friend Recommender](problems/07_friend_recommender/) | Medium | 50 min |
+| 08 | [Card Game](problems/08_card_game/) | Medium | 50 min |
+| 09 | [Log Analyzer](problems/09_log_analyzer/) | Medium-Hard | 50 min |
+| 10 | [Rate Limiter](problems/10_rate_limiter/) | Hard | 50 min |
 
 ## Suggested path
 
 Ten problems is more than anyone needs in one sitting. Three orders worth using.
 
-**Your first session: 03, then 02, then 05.** Inventory Packer is Easy and greedy, and its
-ladder runs scan to buckets to bisect, so you feel a rung change without learning a new data
-structure. Spell Checker is the other Easy one, and going from scanning the dictionary to
-indexing variants is the clearest "the algorithm was the problem" moment in the repo. Route
-Planner is Medium and ends in Dijkstra with a heap, which is the single shape you are most
-likely to meet again.
+**Your first session: 03, then 02, then 05.** Inventory Packer and Spell Checker are the two
+Easy ones, and both make you feel the moment where the first working solver is not fast
+enough. Route Planner is Medium and is the shape you are most likely to meet again in a real
+round.
 
-**The night before an onsite: 04, then 07, then 01.** Task Scheduler is topological order,
-the graph question that actually gets asked. Friend Recommender is two hop counting plus top
-k, which is the "people you may know" question every social product interview reaches for.
-Word Container is strings and tries, and its README warns about the mistake the assistant
-reliably makes there, so it is the best rehearsal for catching a confident wrong answer
+**The night before an onsite: 04, then 07, then 01.** Task Scheduler is the graph question
+that actually gets asked. Friend Recommender is the "people you may know" question every
+social product interview reaches for. Word Container is the one where an assistant is most
+likely to hand you a confident wrong answer, so it is the best rehearsal for catching one
 under time pressure.
 
-**The three hardest: 10, then 09, then 06.** Rate Limiter is the only Hard one, sliding
-windows plus token buckets, and its last rung needs a running total rather than a rescan.
-Log Analyzer is Medium-Hard and stacks percentiles on top of sliding windows, so the obvious
-optimization stops being enough halfway up. Maze Solver looks like a Medium grid BFS until
-the keys turn the grid into a state space and the first optimization has to be thrown away.
+**The three hardest: 10, then 09, then 06.** Rate Limiter is the only Hard one. Log Analyzer
+is Medium-Hard and the obvious optimization stops being enough halfway up. Maze Solver looks
+like a Medium until the first optimization has to be thrown away.
 
 ## How a session works
 

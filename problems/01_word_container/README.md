@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Strings, sets, tries |
 | **Files you edit** | `src/word_list.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 0.5 s to 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -90,18 +88,7 @@ python -m unittest test_word_list -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: ask your agent to write out the validation rules `WordList` actually enforces,
-  then hold that list against what the tests expect, instead of asking where the bugs are.
-- Watch for: a containment check that counts a word as containing itself, and a solution
-  built on the set of all substrings, which is quick on 25000 short words and falls over on
-  the 1500 letter words in `words_long.txt`.
-- Test to tighten: feed the same word in twice and assert it still does not come back as its
-  own container.
-
 ---
 
-Spoilers ahead: [`../../solutions/01_word_container/ANSWER_KEY.md`](../../solutions/01_word_container/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/01_word_container/ANSWER_KEY.md`](../../solutions/01_word_container/ANSWER_KEY.md).
+Do not open it until your timer is done.

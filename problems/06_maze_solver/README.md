@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Grid BFS, state search |
 | **Files you edit** | `src/maze.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -99,17 +97,7 @@ python -m unittest test_maze -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: ask for the smallest maze where keying the visited set on `(row, col)` alone
-  returns the wrong answer.
-- Watch for: a visited set keyed on the cell rather than on the cell plus the keys held, and
-  a door check that compares an uppercase door letter against lowercase keys.
-- Test to tighten: build a maze whose only route runs through a door whose key is sealed
-  behind walls, and assert the answer is `-1`.
-
 ---
 
-Spoilers ahead: [`../../solutions/06_maze_solver/ANSWER_KEY.md`](../../solutions/06_maze_solver/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/06_maze_solver/ANSWER_KEY.md`](../../solutions/06_maze_solver/ANSWER_KEY.md).
+Do not open it until your timer is done.

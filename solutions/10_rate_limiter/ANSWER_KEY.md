@@ -23,8 +23,8 @@
    return later - earlier <= width_ms
    ```
 
-   The class docstring says the window is half open, so a request exactly
-   `window_ms` older than the arrival has already left. The bug only shows on
+   The README says the window is half open, so a request exactly `window_ms`
+   older than the arrival has already left. The bug only shows on
    an exact tie, which never happens in the hand written examples and happens
    constantly in the generated logs, where hundreds of pairs of requests land
    exactly one window apart. Fix: `<`. Caught by
@@ -101,9 +101,9 @@ Cost: O(1) per request. About 0.08 s on the hot log. Reference: `solver.py`.
 
 ## Good AI prompts
 
-1. "Read the rules at the top of request_log.py and restate them as a decision
-   procedure for one request, being explicit about which requests count toward
-   the window and which ones spend tokens."
+1. "Here are the two rules from README.md. Restate them as a decision procedure
+   for one request, being explicit about which requests count toward the window
+   and which ones spend tokens."
 2. "On the hot log each client's window holds around five hundred requests and
    I add them up on every request. Rewrite the window so each request is added
    to a total once and subtracted once."
@@ -116,7 +116,7 @@ Cost: O(1) per request. About 0.08 s on the hot log. Reference: `solver.py`.
 1. "Write a rate limiter." (You get one rule, usually a token bucket, and the
    window rule quietly disappears.)
 2. "Only count allowed requests in the window." (A reasonable sounding guess,
-   and the opposite of the rule written down here.)
+   and the opposite of the rule the README states.)
 3. "Fix the bugs in request_log.py." (Both bugs look deliberate: a timestamp
    parser that handles the format the examples use, and an inclusive window
    comparison that reads like a choice.)

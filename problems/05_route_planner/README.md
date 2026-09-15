@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Weighted graphs, Dijkstra |
 | **Files you edit** | `src/road_map.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s to 2.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -103,18 +101,7 @@ python -m unittest test_road_map -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: ask for a concise list of options for 100 trips on a 90000 stop grid where
-  the two stops are always within fifteen blocks of each other, and say not to write code
-  yet.
-- Watch for: a breadth first search, which counts roads rather than minutes and calls
-  airport to downtown one hop instead of 17 minutes.
-- Test to tighten: add the same pair of stops twice with two different travel times and
-  assert the faster road is the one that survives.
-
 ---
 
-Spoilers ahead: [`../../solutions/05_route_planner/ANSWER_KEY.md`](../../solutions/05_route_planner/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/05_route_planner/ANSWER_KEY.md`](../../solutions/05_route_planner/ANSWER_KEY.md).
+Do not open it until your timer is done.

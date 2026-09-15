@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium-Hard |
-| **Topics** | Sliding windows, percentiles |
 | **Files you edit** | `src/log_parser.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -34,7 +32,7 @@ collapses to the literal `{id}`. That makes `/api/orders/4812/items` into
 The p95 of a group of latencies is nearest rank, not an interpolated percentile. Sort the
 latencies ascending and take the value at index `ceil(0.95 * n) - 1`, so a single request is
 its own p95 and a group of twenty takes the value at index 18, the second largest of the
-twenty. Do not let an assistant swap in the formula it remembers from somewhere else.
+twenty.
 
 `scan_windows(width, step, k)` walks a window of `width` seconds across the log, moving it
 forward `step` seconds at a time, and reports the `k` slowest endpoints in each window. The
@@ -79,9 +77,7 @@ is 60.
 
 The three bigger logs are not committed, since as text they would be tens of megabytes.
 `src/log_data.py` rebuilds them from fixed seeds: 15000 requests over an hour, 200000
-requests over four hours, and 200000 requests over two hours. The last one is no bigger than
-the one before it, but the timed test that uses it asks for fifteen minute windows five
-seconds apart, so every request lands in a great many windows at once.
+requests over four hours, and 200000 requests over two hours.
 
 ## Your tasks
 
@@ -117,17 +113,7 @@ python -m unittest test_log_parser -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: ask it to state the p95 definition from `log_parser.py` and write it in one
-  line, with numpy and any remembered percentile formula ruled out.
-- Watch for: an interpolated percentile in place of nearest rank, and an endpoint rule that
-  collapses only long numeric path segments, leaving `/api/users/7` on its own.
-- Test to tighten: assert a window holding no requests still appears in the result, and that
-  a one digit id groups with a three digit one.
-
 ---
 
-Spoilers ahead: [`../../solutions/09_log_analyzer/ANSWER_KEY.md`](../../solutions/09_log_analyzer/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/09_log_analyzer/ANSWER_KEY.md`](../../solutions/09_log_analyzer/ANSWER_KEY.md).
+Do not open it until your timer is done.

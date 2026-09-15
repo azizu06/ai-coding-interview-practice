@@ -21,7 +21,8 @@
    if part.isdigit() and len(part) > 2:
    ```
 
-   The docstring says every numeric segment. With the bug, `/api/users/7` and
+   The README says every numeric segment collapses, and its worked example
+   groups `/api/users/7` with `/api/users/812`. With the bug, `/api/users/7` and
    `/api/users/812` are counted as different endpoints, so the small id traffic
    the generator deliberately mixes in is scattered across hundreds of one-off
    groups, each with a p95 of its own single request. Fix: drop the length
@@ -96,15 +97,18 @@ Reference: `solver.py`.
 
 ## Good AI prompts
 
-1. "Read log_parser.py and state the exact definition of p95 used here, then
-   write a one line function for it. Do not use numpy or a percentile formula
-   from memory."
+1. "Read `p95_index` in log_parser.py and state the exact definition of p95 this
+   problem uses, then write a one line function for it. Do not use numpy or a
+   percentile formula from memory."
 2. "On the wide log each request belongs to about 180 windows. Rewrite the scan
    so a request is added to the window state once and removed once, rather than
    being re-read for every window it touches."
 3. "Here is my `live` dict of endpoint to sorted latency list. Give me the
    removal path: I know the endpoint and the latency, and there may be
    duplicates."
+4. "Add a test that a window holding no requests still shows up in the result as
+   an empty list, and one that a one digit id groups with a three digit one."
+   (Two cases the shipped tests leave thin.)
 
 ## Bad AI prompts
 

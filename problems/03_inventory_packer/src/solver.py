@@ -12,7 +12,7 @@ class Solver:
 
         Return a list of boxes, each box a list of item names. Every item appears in
         exactly one box. Use as few boxes as you reasonably can: the tests accept any
-        packing that uses no more boxes than first-fit decreasing would.
+        packing whose box count is at or below the count they expect, as README.md says.
         Raise ValueError when an item is heavier than `capacity`.
         """
         pass

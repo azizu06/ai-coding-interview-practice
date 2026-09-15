@@ -3,9 +3,11 @@
 ## The two bugs in `WordList`
 
 1. `is_valid_word` rejects a word whose length equals `max_length`. The check reads
-   `len(word) >= self.max_length` but the docstring says the maximum is inclusive, so it
-   must be `len(word) > self.max_length`. `test_word_exactly_max_length_is_valid` and
-   `test_max_length_word_is_kept` expose it.
+   `len(word) >= self.max_length`, but a maximum length includes that length itself, so it
+   must be `len(word) > self.max_length`. The commented-out
+   `test_word_exactly_max_length_is_valid` and `test_max_length_word_is_kept` are the two
+   that ask for it, and the live `test_word_longer_than_max_is_rejected` is the pair that
+   makes the boundary obvious once both are running.
 2. `is_valid_word` accepts the empty string. The letter loop never runs for `""`, so the
    function falls through to `return True`. Add an explicit `len(word) == 0` rejection.
    `test_empty_string_is_rejected` and `test_blank_entries_are_dropped` expose it, and
@@ -38,13 +40,17 @@ word itself and must be ignored.
 
 ## Good AI prompts
 
-1. "Read word_list.py and list every rule the docstring promises, then tell me which rule each
-   method fails to enforce." (Points the agent at the contract rather than the code.)
+1. "Read word_list.py and write out every rule it actually enforces on a word, then hold
+   that list against the README and the commented-out tests in test_word_list.py and tell
+   me which rule is off." (Points the agent at the stated behavior rather than asking it to
+   hunt for bugs.)
 2. "My substring-set solver passes 25000 short words in 0.04 s but takes 5 s on 30 words of
    2000 letters. Explain why the cost grows with the cube of the word length and propose a
    structure whose cost does not." (Gives the agent the measured evidence.)
 3. "Write a trie-based find_container_words that treats a word matching itself as a non
    match, and keep the output sorted and de-duplicated." (States the edge case up front.)
+4. "Add a test that feeds the same word into the list twice and asserts it still does not
+   come back as its own container." (Tightens the weakest spot in the shipped tests.)
 
 ## Bad AI prompts
 

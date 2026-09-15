@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Graphs, topological order |
 | **Files you edit** | `src/task_graph.py`, `src/solver.py` |
-| **Timed budget** | 4 timed tests, 1.0 s to 2.0 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -106,18 +104,7 @@ python -m unittest test_task_graph -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: give it the definitions of dependency and dependent from the top of this
-  file, then ask which map each line of `add_dependency` updates and whether the direction
-  matches.
-- Watch for: ask for a topological sort and you tend to get a recursive depth first search,
-  which blows Python's stack on the 50000 task chain and ignores the alphabetical tie-break.
-- Test to tighten: build four tasks in a loop with one task hanging off it, assert
-  `has_cycle()` is True and that `execution_order()` raises.
-
 ---
 
-Spoilers ahead: [`../../solutions/04_task_scheduler/ANSWER_KEY.md`](../../solutions/04_task_scheduler/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/04_task_scheduler/ANSWER_KEY.md`](../../solutions/04_task_scheduler/ANSWER_KEY.md).
+Do not open it until your timer is done.

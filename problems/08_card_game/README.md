@@ -5,9 +5,7 @@
 |  |  |
 | --- | --- |
 | **Difficulty** | Medium |
-| **Topics** | Enumeration, precomputed tables |
 | **Files you edit** | `src/deck.py`, `src/solver.py` |
-| **Timed budget** | 5 timed tests, 1.0 s to 1.5 s each |
 | **Suggested time** | 50 min |
 
 ## The problem
@@ -32,8 +30,7 @@ The nine categories run weakest first from 0 to 8.
 5 full house   6 flush      7 four of a kind  8 straight flush
 ```
 
-One of those is not the rule you are used to. In this game a FLUSH BEATS A FULL HOUSE. Do
-not let an assistant fill in a poker table from memory.
+In this game a FLUSH BEATS A FULL HOUSE.
 
 A straight is five ranks in a row. The ace plays both high, T J Q K A, and low, A 2 3 4 5.
 The low one is called the wheel, and its high card counts as 5, so it is the weakest
@@ -73,9 +70,8 @@ Four spades are not a flush. Nothing else lines up, so this is a high card hand.
 | `src/test_solver.py` | unit tests for Solver, correctness first, then timed |
 
 The three largest hand sets are not committed, since they would be megabytes of text.
-`src/hand_data.py` rebuilds them from fixed seeds: 60000 ordinary hands, 250000 ordinary
-hands, and 60000 hands rigged so that flushes and straights turn up far more often than
-chance.
+`src/hand_data.py` rebuilds them from fixed seeds: 60000 hands, 250000 hands, and a third
+set of 60000 hands dealt from a different mix.
 
 ## Your tasks
 
@@ -113,17 +109,7 @@ python -m unittest test_deck -v
 Until you implement the solver, `test_solver.py` fails and the domain tests pass. That is
 the shipped state, not a broken checkout.
 
-## Hints for using your AI well
-
-- Good prompt: paste the rules from the section above, tell it to restate them in its own
-  words, and tell it to use nothing it already knows about poker rankings.
-- Watch for: a generated evaluator that ranks a full house above a flush, which throws off
-  every category total by exactly the number of flushes and full houses in the file.
-- Test to tighten: score a hand with six cards of one suit to prove the best five survive,
-  and a wheel, A 2 3 4 5, to prove the ace plays low.
-
 ---
 
-Spoilers ahead: [`../../solutions/08_card_game/ANSWER_KEY.md`](../../solutions/08_card_game/ANSWER_KEY.md)
-names both bugs, the whole optimization ladder and the expected values. Do not open it until
-your timer is done.
+Spoilers ahead: [`../../solutions/08_card_game/ANSWER_KEY.md`](../../solutions/08_card_game/ANSWER_KEY.md).
+Do not open it until your timer is done.

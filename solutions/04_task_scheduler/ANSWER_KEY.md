@@ -40,9 +40,9 @@ the task count, which is what `has_cycle` checks.
 
 ## Good AI prompts
 
-1. "The docstring defines dependency and dependent. Read add_dependency and tell me which
-   map each line updates and whether the direction matches the definition." (Points at the
-   vocabulary the bug violates.)
+1. "The README defines dependency and dependent with a worked example. Read add_dependency
+   and tell me which map each line updates and whether the direction matches those two
+   definitions." (Points at the vocabulary the bug violates.)
 2. "I have a topological order from Kahn's algorithm. Explain why walking that order lets
    me compute each task's earliest finish in one pass without recursion, and what breaks
    if I recurse instead on a 50000 task chain." (Asks for the invariant and the failure.)
@@ -53,7 +53,7 @@ the task count, which is what `has_cycle` checks.
 
 1. "Write a topological sort." (You will get a DFS with recursion, which blows the stack
    on the chain test, and it will ignore the alphabetical tie-break rule.)
-2. "Why is dependents_of wrong?" without the docstring. (The agent cannot know which
-   direction was intended.)
+2. "Why is dependents_of wrong?" without the definitions from the README. (The agent
+   cannot know which direction was intended.)
 3. "Speed up finish_times" while still building the order with repeated scans. (The order
    is the quadratic part on large and huge; fixing the wrong stage first wastes minutes.)

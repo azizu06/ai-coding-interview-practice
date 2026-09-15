@@ -2,7 +2,7 @@
 
 A SocialGraph stores mutual friendships between users. A user is an integer id.
 
-Rules the class promises:
+Rules this class follows:
   * a friendship is mutual, so adding (a, b) also makes b a friend of a
   * a user is never their own friend, so add_friendship(a, a) does nothing
   * adding the same friendship a second time changes nothing
