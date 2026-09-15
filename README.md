@@ -318,6 +318,8 @@ from candidate reports.
   then ask the agent to write exactly that. Now the interviewer knows the idea was yours.
 - **Do not narrate the generated code line by line.** Give a two or three sentence summary of
   what it does and confirm it matches what you expected.
+- **Work backwards from the tests.** The failing tests say exactly what is broken and what
+  the fix has to return. Start there and read only the code they touch.
 - **Run tests one at a time.** Uncommenting everything at once buries you in failures.
 - **Adding or tightening a test that you think is weak is a visible plus.**
 - **Ask for complexity without leading.** "What is the time complexity if N is the number of
