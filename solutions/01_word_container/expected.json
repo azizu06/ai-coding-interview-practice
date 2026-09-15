@@ -1,0 +1,15 @@
+{
+  "test_word_exactly_max_length_is_valid": "True",
+  "test_empty_string_is_rejected": "False",
+  "test_blank_entries_are_dropped": "2",
+  "test_max_length_word_is_kept": "[\"abc\", \"abcd\"]",
+  "test_example_words": "[\"concatenate\", \"hotdog\", \"plate\", \"sunny\"]",
+  "test_word_containing_two_others_is_listed_once": "[\"sunhat\", \"sunhats\"]",
+  "test_prefix_and_suffix_both_count": "[\"often\", \"tenor\"]",
+  "test_duplicate_input_word_is_not_its_own_container": "[]",
+  "test_small_file": "7",
+  "test_medium_500_words": "73",
+  "test_large_10000_words": "1567",
+  "test_huge_25000_words": "4305",
+  "test_long_words": "6"
+}

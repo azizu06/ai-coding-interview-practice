@@ -1,0 +1,9 @@
+{
+  "test_an_hour_is_thirty_six_hundred_seconds": "7200",
+  "test_a_stamp_late_in_the_day": "1772360132",
+  "test_a_one_digit_id_is_still_an_id": "\"/api/users/{id}\"",
+  "test_a_two_digit_id_is_still_an_id": "\"/api/cart/{id}\"",
+  "test_an_empty_log_has_no_windows": "[]",
+  "test_windows_with_no_requests_stay_in_the_result": "[[('/a', 90)], [], [], [], [], [('/b', 50)]]",
+  "test_overlapping_windows_share_requests": "[[('/api/search', 900), ('/api/orders/{id}', 400)], [('/api/search', 1500), ('/api/orders/{id}', 400)], [('/api/search', 1500)]]"
+}

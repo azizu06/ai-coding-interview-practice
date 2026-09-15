@@ -1,0 +1,11 @@
+{
+  "test_duplicate_friendship_is_ignored": "[2]",
+  "test_repeats_do_not_inflate_degree": "2",
+  "test_unknown_user_has_no_friends": "[]",
+  "test_degree_of_unknown_user_is_zero": "0",
+  "test_example_graph_user_1": "[(5, 3), (6, 2)]",
+  "test_example_graph_user_7": "[(2, 2), (3, 2), (4, 1)]",
+  "test_limit_truncates_the_ranking": "[(2, 2)]",
+  "test_a_tie_goes_to_the_smaller_id": "[(4, 2), (5, 2)]",
+  "test_friend_of_a_friend_of_a_friend_is_too_far": "[(3, 1)]"
+}

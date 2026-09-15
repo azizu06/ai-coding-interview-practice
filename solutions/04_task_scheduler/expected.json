@@ -1,0 +1,15 @@
+{
+  "test_dependents_of": "[\"compile\", \"lint\"]",
+  "test_dependents_of_final_task": "[]",
+  "test_ready_after_fetch": "[\"compile\", \"lint\"]",
+  "test_ready_when_everything_is_done": "[]",
+  "test_example_order": "[\"fetch\", \"compile\", \"lint\", \"package\", \"test\", \"deploy\"]",
+  "test_example_finish_times": "{\"fetch\": 2, \"compile\": 7, \"lint\": 3, \"package\": 9, \"test\": 11, \"deploy\": 14}",
+  "test_diamond_waits_for_slowest_branch": "7",
+  "test_cycle_is_detected": "True",
+  "test_small_file": "66",
+  "test_medium_2000_tasks": "227",
+  "test_large_20000_tasks": "395",
+  "test_huge_100000_tasks": "376",
+  "test_long_chain_50000_tasks": "149953"
+}

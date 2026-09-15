@@ -1,0 +1,9 @@
+{
+  "test_a_one_digit_fraction_is_tenths": "12500",
+  "test_a_two_digit_fraction_is_hundredths": "3050",
+  "test_a_request_exactly_one_window_old_has_left": "False",
+  "test_the_far_edge_of_a_wider_window": "False",
+  "test_an_empty_log_decides_nothing": "[]",
+  "test_the_far_edge_of_the_window": "[True, True, False, True]",
+  "test_the_two_rules_interact": "[True, True, True, True, False, False, True, False, False, False]"
+}

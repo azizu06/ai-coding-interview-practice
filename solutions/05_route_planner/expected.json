@@ -1,0 +1,21 @@
+{
+  "test_roads_are_two_way": "20",
+  "test_neighbors_include_every_road": "[(\"airport\", 12), (\"beach\", 15), (\"downtown\", 5)]",
+  "test_road_count_counts_each_road_once": "6",
+  "test_faster_road_wins": {
+    "expected_after_slower": "20",
+    "expected_after_faster": "6"
+  },
+  "test_two_hops_beat_one_slow_road": "17",
+  "test_longest_trip_in_town": "27",
+  "test_route_around_the_bay": "25",
+  "test_small_grid_corner_to_corner": "22",
+  "test_three_nearest_to_downtown": "[(\"campus\", 5), (\"harbor\", 8), (\"beach\", 11)]",
+  "test_isolated_stop_has_no_neighbours": "[]",
+  "test_asking_for_more_than_exists": "[(\"campus\", 12), (\"downtown\", 17), (\"harbor\", 25), (\"beach\", 27)]",
+  "test_small_grid_nearest_three": "[(\"r0c1\", 3), (\"r1c0\", 7), (\"r1c1\", 8)]",
+  "test_medium_900_stops": "734",
+  "test_large_10000_stops": "1772",
+  "test_huge_90000_stops_short_trips": "4965",
+  "test_huge_90000_stops_nearest_five": "4366"
+}

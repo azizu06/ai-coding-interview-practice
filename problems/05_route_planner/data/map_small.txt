@@ -1,0 +1,51 @@
+stop r0c0
+stop r0c1
+stop r0c2
+stop r0c3
+stop r0c4
+stop r1c0
+stop r1c1
+stop r1c2
+stop r1c3
+stop r1c4
+stop r2c0
+stop r2c1
+stop r2c2
+stop r2c3
+stop r2c4
+stop r3c0
+stop r3c1
+stop r3c2
+stop r3c3
+stop r3c4
+road r0c0 r0c1 3
+road r0c0 r1c0 7
+road r0c1 r0c2 7
+road r0c1 r1c1 5
+road r0c2 r0c3 8
+road r0c2 r1c2 4
+road r0c3 r0c4 8
+road r0c3 r1c3 9
+road r0c4 r1c4 3
+road r1c0 r1c1 9
+road r1c0 r2c0 9
+road r1c1 r1c2 4
+road r1c1 r2c1 1
+road r1c2 r1c3 1
+road r1c2 r2c2 6
+road r1c3 r1c4 7
+road r1c3 r2c3 2
+road r1c4 r2c4 3
+road r2c0 r2c1 4
+road r2c0 r3c0 4
+road r2c1 r2c2 1
+road r2c1 r3c1 7
+road r2c2 r2c3 7
+road r2c2 r3c2 8
+road r2c3 r2c4 1
+road r2c3 r3c3 6
+road r2c4 r3c4 9
+road r3c0 r3c1 8
+road r3c1 r3c2 2
+road r3c2 r3c3 6
+road r3c3 r3c4 1

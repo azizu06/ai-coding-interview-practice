@@ -1,0 +1,14 @@
+{
+  "test_rejects_zero_weight": "False",
+  "test_constructor_skips_invalid_pairs": "1",
+  "test_equal_weights_are_ordered_by_name": "[\"anvil\", \"ant\", \"book\", \"cup\"]",
+  "test_heaviest_breaks_ties_by_name": "\"apple\"",
+  "test_example_box_count": "4",
+  "test_decreasing_order_matters": "3",
+  "test_exact_fit_boxes": "2",
+  "test_small_file": "6",
+  "test_medium_2000_items": "618",
+  "test_large_40000_items": "12211",
+  "test_huge_200000_items": "60999",
+  "test_wide_weights_20000_items": "7044"
+}

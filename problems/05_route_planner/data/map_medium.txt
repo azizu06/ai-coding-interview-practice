@@ -1,0 +1,2640 @@
+stop r0c0
+stop r0c1
+stop r0c2
+stop r0c3
+stop r0c4
+stop r0c5
+stop r0c6
+stop r0c7
+stop r0c8
+stop r0c9
+stop r0c10
+stop r0c11
+stop r0c12
+stop r0c13
+stop r0c14
+stop r0c15
+stop r0c16
+stop r0c17
+stop r0c18
+stop r0c19
+stop r0c20
+stop r0c21
+stop r0c22
+stop r0c23
+stop r0c24
+stop r0c25
+stop r0c26
+stop r0c27
+stop r0c28
+stop r0c29
+stop r1c0
+stop r1c1
+stop r1c2
+stop r1c3
+stop r1c4
+stop r1c5
+stop r1c6
+stop r1c7
+stop r1c8
+stop r1c9
+stop r1c10
+stop r1c11
+stop r1c12
+stop r1c13
+stop r1c14
+stop r1c15
+stop r1c16
+stop r1c17
+stop r1c18
+stop r1c19
+stop r1c20
+stop r1c21
+stop r1c22
+stop r1c23
+stop r1c24
+stop r1c25
+stop r1c26
+stop r1c27
+stop r1c28
+stop r1c29
+stop r2c0
+stop r2c1
+stop r2c2
+stop r2c3
+stop r2c4
+stop r2c5
+stop r2c6
+stop r2c7
+stop r2c8
+stop r2c9
+stop r2c10
+stop r2c11
+stop r2c12
+stop r2c13
+stop r2c14
+stop r2c15
+stop r2c16
+stop r2c17
+stop r2c18
+stop r2c19
+stop r2c20
+stop r2c21
+stop r2c22
+stop r2c23
+stop r2c24
+stop r2c25
+stop r2c26
+stop r2c27
+stop r2c28
+stop r2c29
+stop r3c0
+stop r3c1
+stop r3c2
+stop r3c3
+stop r3c4
+stop r3c5
+stop r3c6
+stop r3c7
+stop r3c8
+stop r3c9
+stop r3c10
+stop r3c11
+stop r3c12
+stop r3c13
+stop r3c14
+stop r3c15
+stop r3c16
+stop r3c17
+stop r3c18
+stop r3c19
+stop r3c20
+stop r3c21
+stop r3c22
+stop r3c23
+stop r3c24
+stop r3c25
+stop r3c26
+stop r3c27
+stop r3c28
+stop r3c29
+stop r4c0
+stop r4c1
+stop r4c2
+stop r4c3
+stop r4c4
+stop r4c5
+stop r4c6
+stop r4c7
+stop r4c8
+stop r4c9
+stop r4c10
+stop r4c11
+stop r4c12
+stop r4c13
+stop r4c14
+stop r4c15
+stop r4c16
+stop r4c17
+stop r4c18
+stop r4c19
+stop r4c20
+stop r4c21
+stop r4c22
+stop r4c23
+stop r4c24
+stop r4c25
+stop r4c26
+stop r4c27
+stop r4c28
+stop r4c29
+stop r5c0
+stop r5c1
+stop r5c2
+stop r5c3
+stop r5c4
+stop r5c5
+stop r5c6
+stop r5c7
+stop r5c8
+stop r5c9
+stop r5c10
+stop r5c11
+stop r5c12
+stop r5c13
+stop r5c14
+stop r5c15
+stop r5c16
+stop r5c17
+stop r5c18
+stop r5c19
+stop r5c20
+stop r5c21
+stop r5c22
+stop r5c23
+stop r5c24
+stop r5c25
+stop r5c26
+stop r5c27
+stop r5c28
+stop r5c29
+stop r6c0
+stop r6c1
+stop r6c2
+stop r6c3
+stop r6c4
+stop r6c5
+stop r6c6
+stop r6c7
+stop r6c8
+stop r6c9
+stop r6c10
+stop r6c11
+stop r6c12
+stop r6c13
+stop r6c14
+stop r6c15
+stop r6c16
+stop r6c17
+stop r6c18
+stop r6c19
+stop r6c20
+stop r6c21
+stop r6c22
+stop r6c23
+stop r6c24
+stop r6c25
+stop r6c26
+stop r6c27
+stop r6c28
+stop r6c29
+stop r7c0
+stop r7c1
+stop r7c2
+stop r7c3
+stop r7c4
+stop r7c5
+stop r7c6
+stop r7c7
+stop r7c8
+stop r7c9
+stop r7c10
+stop r7c11
+stop r7c12
+stop r7c13
+stop r7c14
+stop r7c15
+stop r7c16
+stop r7c17
+stop r7c18
+stop r7c19
+stop r7c20
+stop r7c21
+stop r7c22
+stop r7c23
+stop r7c24
+stop r7c25
+stop r7c26
+stop r7c27
+stop r7c28
+stop r7c29
+stop r8c0
+stop r8c1
+stop r8c2
+stop r8c3
+stop r8c4
+stop r8c5
+stop r8c6
+stop r8c7
+stop r8c8
+stop r8c9
+stop r8c10
+stop r8c11
+stop r8c12
+stop r8c13
+stop r8c14
+stop r8c15
+stop r8c16
+stop r8c17
+stop r8c18
+stop r8c19
+stop r8c20
+stop r8c21
+stop r8c22
+stop r8c23
+stop r8c24
+stop r8c25
+stop r8c26
+stop r8c27
+stop r8c28
+stop r8c29
+stop r9c0
+stop r9c1
+stop r9c2
+stop r9c3
+stop r9c4
+stop r9c5
+stop r9c6
+stop r9c7
+stop r9c8
+stop r9c9
+stop r9c10
+stop r9c11
+stop r9c12
+stop r9c13
+stop r9c14
+stop r9c15
+stop r9c16
+stop r9c17
+stop r9c18
+stop r9c19
+stop r9c20
+stop r9c21
+stop r9c22
+stop r9c23
+stop r9c24
+stop r9c25
+stop r9c26
+stop r9c27
+stop r9c28
+stop r9c29
+stop r10c0
+stop r10c1
+stop r10c2
+stop r10c3
+stop r10c4
+stop r10c5
+stop r10c6
+stop r10c7
+stop r10c8
+stop r10c9
+stop r10c10
+stop r10c11
+stop r10c12
+stop r10c13
+stop r10c14
+stop r10c15
+stop r10c16
+stop r10c17
+stop r10c18
+stop r10c19
+stop r10c20
+stop r10c21
+stop r10c22
+stop r10c23
+stop r10c24
+stop r10c25
+stop r10c26
+stop r10c27
+stop r10c28
+stop r10c29
+stop r11c0
+stop r11c1
+stop r11c2
+stop r11c3
+stop r11c4
+stop r11c5
+stop r11c6
+stop r11c7
+stop r11c8
+stop r11c9
+stop r11c10
+stop r11c11
+stop r11c12
+stop r11c13
+stop r11c14
+stop r11c15
+stop r11c16
+stop r11c17
+stop r11c18
+stop r11c19
+stop r11c20
+stop r11c21
+stop r11c22
+stop r11c23
+stop r11c24
+stop r11c25
+stop r11c26
+stop r11c27
+stop r11c28
+stop r11c29
+stop r12c0
+stop r12c1
+stop r12c2
+stop r12c3
+stop r12c4
+stop r12c5
+stop r12c6
+stop r12c7
+stop r12c8
+stop r12c9
+stop r12c10
+stop r12c11
+stop r12c12
+stop r12c13
+stop r12c14
+stop r12c15
+stop r12c16
+stop r12c17
+stop r12c18
+stop r12c19
+stop r12c20
+stop r12c21
+stop r12c22
+stop r12c23
+stop r12c24
+stop r12c25
+stop r12c26
+stop r12c27
+stop r12c28
+stop r12c29
+stop r13c0
+stop r13c1
+stop r13c2
+stop r13c3
+stop r13c4
+stop r13c5
+stop r13c6
+stop r13c7
+stop r13c8
+stop r13c9
+stop r13c10
+stop r13c11
+stop r13c12
+stop r13c13
+stop r13c14
+stop r13c15
+stop r13c16
+stop r13c17
+stop r13c18
+stop r13c19
+stop r13c20
+stop r13c21
+stop r13c22
+stop r13c23
+stop r13c24
+stop r13c25
+stop r13c26
+stop r13c27
+stop r13c28
+stop r13c29
+stop r14c0
+stop r14c1
+stop r14c2
+stop r14c3
+stop r14c4
+stop r14c5
+stop r14c6
+stop r14c7
+stop r14c8
+stop r14c9
+stop r14c10
+stop r14c11
+stop r14c12
+stop r14c13
+stop r14c14
+stop r14c15
+stop r14c16
+stop r14c17
+stop r14c18
+stop r14c19
+stop r14c20
+stop r14c21
+stop r14c22
+stop r14c23
+stop r14c24
+stop r14c25
+stop r14c26
+stop r14c27
+stop r14c28
+stop r14c29
+stop r15c0
+stop r15c1
+stop r15c2
+stop r15c3
+stop r15c4
+stop r15c5
+stop r15c6
+stop r15c7
+stop r15c8
+stop r15c9
+stop r15c10
+stop r15c11
+stop r15c12
+stop r15c13
+stop r15c14
+stop r15c15
+stop r15c16
+stop r15c17
+stop r15c18
+stop r15c19
+stop r15c20
+stop r15c21
+stop r15c22
+stop r15c23
+stop r15c24
+stop r15c25
+stop r15c26
+stop r15c27
+stop r15c28
+stop r15c29
+stop r16c0
+stop r16c1
+stop r16c2
+stop r16c3
+stop r16c4
+stop r16c5
+stop r16c6
+stop r16c7
+stop r16c8
+stop r16c9
+stop r16c10
+stop r16c11
+stop r16c12
+stop r16c13
+stop r16c14
+stop r16c15
+stop r16c16
+stop r16c17
+stop r16c18
+stop r16c19
+stop r16c20
+stop r16c21
+stop r16c22
+stop r16c23
+stop r16c24
+stop r16c25
+stop r16c26
+stop r16c27
+stop r16c28
+stop r16c29
+stop r17c0
+stop r17c1
+stop r17c2
+stop r17c3
+stop r17c4
+stop r17c5
+stop r17c6
+stop r17c7
+stop r17c8
+stop r17c9
+stop r17c10
+stop r17c11
+stop r17c12
+stop r17c13
+stop r17c14
+stop r17c15
+stop r17c16
+stop r17c17
+stop r17c18
+stop r17c19
+stop r17c20
+stop r17c21
+stop r17c22
+stop r17c23
+stop r17c24
+stop r17c25
+stop r17c26
+stop r17c27
+stop r17c28
+stop r17c29
+stop r18c0
+stop r18c1
+stop r18c2
+stop r18c3
+stop r18c4
+stop r18c5
+stop r18c6
+stop r18c7
+stop r18c8
+stop r18c9
+stop r18c10
+stop r18c11
+stop r18c12
+stop r18c13
+stop r18c14
+stop r18c15
+stop r18c16
+stop r18c17
+stop r18c18
+stop r18c19
+stop r18c20
+stop r18c21
+stop r18c22
+stop r18c23
+stop r18c24
+stop r18c25
+stop r18c26
+stop r18c27
+stop r18c28
+stop r18c29
+stop r19c0
+stop r19c1
+stop r19c2
+stop r19c3
+stop r19c4
+stop r19c5
+stop r19c6
+stop r19c7
+stop r19c8
+stop r19c9
+stop r19c10
+stop r19c11
+stop r19c12
+stop r19c13
+stop r19c14
+stop r19c15
+stop r19c16
+stop r19c17
+stop r19c18
+stop r19c19
+stop r19c20
+stop r19c21
+stop r19c22
+stop r19c23
+stop r19c24
+stop r19c25
+stop r19c26
+stop r19c27
+stop r19c28
+stop r19c29
+stop r20c0
+stop r20c1
+stop r20c2
+stop r20c3
+stop r20c4
+stop r20c5
+stop r20c6
+stop r20c7
+stop r20c8
+stop r20c9
+stop r20c10
+stop r20c11
+stop r20c12
+stop r20c13
+stop r20c14
+stop r20c15
+stop r20c16
+stop r20c17
+stop r20c18
+stop r20c19
+stop r20c20
+stop r20c21
+stop r20c22
+stop r20c23
+stop r20c24
+stop r20c25
+stop r20c26
+stop r20c27
+stop r20c28
+stop r20c29
+stop r21c0
+stop r21c1
+stop r21c2
+stop r21c3
+stop r21c4
+stop r21c5
+stop r21c6
+stop r21c7
+stop r21c8
+stop r21c9
+stop r21c10
+stop r21c11
+stop r21c12
+stop r21c13
+stop r21c14
+stop r21c15
+stop r21c16
+stop r21c17
+stop r21c18
+stop r21c19
+stop r21c20
+stop r21c21
+stop r21c22
+stop r21c23
+stop r21c24
+stop r21c25
+stop r21c26
+stop r21c27
+stop r21c28
+stop r21c29
+stop r22c0
+stop r22c1
+stop r22c2
+stop r22c3
+stop r22c4
+stop r22c5
+stop r22c6
+stop r22c7
+stop r22c8
+stop r22c9
+stop r22c10
+stop r22c11
+stop r22c12
+stop r22c13
+stop r22c14
+stop r22c15
+stop r22c16
+stop r22c17
+stop r22c18
+stop r22c19
+stop r22c20
+stop r22c21
+stop r22c22
+stop r22c23
+stop r22c24
+stop r22c25
+stop r22c26
+stop r22c27
+stop r22c28
+stop r22c29
+stop r23c0
+stop r23c1
+stop r23c2
+stop r23c3
+stop r23c4
+stop r23c5
+stop r23c6
+stop r23c7
+stop r23c8
+stop r23c9
+stop r23c10
+stop r23c11
+stop r23c12
+stop r23c13
+stop r23c14
+stop r23c15
+stop r23c16
+stop r23c17
+stop r23c18
+stop r23c19
+stop r23c20
+stop r23c21
+stop r23c22
+stop r23c23
+stop r23c24
+stop r23c25
+stop r23c26
+stop r23c27
+stop r23c28
+stop r23c29
+stop r24c0
+stop r24c1
+stop r24c2
+stop r24c3
+stop r24c4
+stop r24c5
+stop r24c6
+stop r24c7
+stop r24c8
+stop r24c9
+stop r24c10
+stop r24c11
+stop r24c12
+stop r24c13
+stop r24c14
+stop r24c15
+stop r24c16
+stop r24c17
+stop r24c18
+stop r24c19
+stop r24c20
+stop r24c21
+stop r24c22
+stop r24c23
+stop r24c24
+stop r24c25
+stop r24c26
+stop r24c27
+stop r24c28
+stop r24c29
+stop r25c0
+stop r25c1
+stop r25c2
+stop r25c3
+stop r25c4
+stop r25c5
+stop r25c6
+stop r25c7
+stop r25c8
+stop r25c9
+stop r25c10
+stop r25c11
+stop r25c12
+stop r25c13
+stop r25c14
+stop r25c15
+stop r25c16
+stop r25c17
+stop r25c18
+stop r25c19
+stop r25c20
+stop r25c21
+stop r25c22
+stop r25c23
+stop r25c24
+stop r25c25
+stop r25c26
+stop r25c27
+stop r25c28
+stop r25c29
+stop r26c0
+stop r26c1
+stop r26c2
+stop r26c3
+stop r26c4
+stop r26c5
+stop r26c6
+stop r26c7
+stop r26c8
+stop r26c9
+stop r26c10
+stop r26c11
+stop r26c12
+stop r26c13
+stop r26c14
+stop r26c15
+stop r26c16
+stop r26c17
+stop r26c18
+stop r26c19
+stop r26c20
+stop r26c21
+stop r26c22
+stop r26c23
+stop r26c24
+stop r26c25
+stop r26c26
+stop r26c27
+stop r26c28
+stop r26c29
+stop r27c0
+stop r27c1
+stop r27c2
+stop r27c3
+stop r27c4
+stop r27c5
+stop r27c6
+stop r27c7
+stop r27c8
+stop r27c9
+stop r27c10
+stop r27c11
+stop r27c12
+stop r27c13
+stop r27c14
+stop r27c15
+stop r27c16
+stop r27c17
+stop r27c18
+stop r27c19
+stop r27c20
+stop r27c21
+stop r27c22
+stop r27c23
+stop r27c24
+stop r27c25
+stop r27c26
+stop r27c27
+stop r27c28
+stop r27c29
+stop r28c0
+stop r28c1
+stop r28c2
+stop r28c3
+stop r28c4
+stop r28c5
+stop r28c6
+stop r28c7
+stop r28c8
+stop r28c9
+stop r28c10
+stop r28c11
+stop r28c12
+stop r28c13
+stop r28c14
+stop r28c15
+stop r28c16
+stop r28c17
+stop r28c18
+stop r28c19
+stop r28c20
+stop r28c21
+stop r28c22
+stop r28c23
+stop r28c24
+stop r28c25
+stop r28c26
+stop r28c27
+stop r28c28
+stop r28c29
+stop r29c0
+stop r29c1
+stop r29c2
+stop r29c3
+stop r29c4
+stop r29c5
+stop r29c6
+stop r29c7
+stop r29c8
+stop r29c9
+stop r29c10
+stop r29c11
+stop r29c12
+stop r29c13
+stop r29c14
+stop r29c15
+stop r29c16
+stop r29c17
+stop r29c18
+stop r29c19
+stop r29c20
+stop r29c21
+stop r29c22
+stop r29c23
+stop r29c24
+stop r29c25
+stop r29c26
+stop r29c27
+stop r29c28
+stop r29c29
+road r0c0 r0c1 3
+road r0c0 r1c0 4
+road r0c1 r0c2 1
+road r0c1 r1c1 8
+road r0c2 r0c3 3
+road r0c2 r1c2 2
+road r0c3 r0c4 6
+road r0c3 r1c3 2
+road r0c4 r0c5 4
+road r0c4 r1c4 5
+road r0c5 r0c6 1
+road r0c5 r1c5 6
+road r0c6 r0c7 3
+road r0c6 r1c6 9
+road r0c7 r0c8 7
+road r0c7 r1c7 1
+road r0c8 r0c9 1
+road r0c8 r1c8 5
+road r0c9 r0c10 5
+road r0c9 r1c9 7
+road r0c10 r0c11 4
+road r0c10 r1c10 3
+road r0c11 r0c12 2
+road r0c11 r1c11 9
+road r0c12 r0c13 1
+road r0c12 r1c12 6
+road r0c13 r0c14 6
+road r0c13 r1c13 5
+road r0c14 r0c15 3
+road r0c14 r1c14 7
+road r0c15 r0c16 5
+road r0c15 r1c15 9
+road r0c16 r0c17 3
+road r0c16 r1c16 5
+road r0c17 r0c18 5
+road r0c17 r1c17 3
+road r0c18 r0c19 7
+road r0c18 r1c18 1
+road r0c19 r0c20 6
+road r0c19 r1c19 9
+road r0c20 r0c21 1
+road r0c20 r1c20 7
+road r0c21 r0c22 5
+road r0c21 r1c21 9
+road r0c22 r0c23 5
+road r0c22 r1c22 9
+road r0c23 r0c24 7
+road r0c23 r1c23 7
+road r0c24 r0c25 3
+road r0c24 r1c24 5
+road r0c25 r0c26 6
+road r0c25 r1c25 7
+road r0c26 r0c27 1
+road r0c26 r1c26 5
+road r0c27 r0c28 9
+road r0c27 r1c27 9
+road r0c28 r0c29 9
+road r0c28 r1c28 7
+road r0c29 r1c29 9
+road r1c0 r1c1 7
+road r1c0 r2c0 2
+road r1c1 r1c2 2
+road r1c1 r2c1 8
+road r1c2 r1c3 6
+road r1c2 r2c2 2
+road r1c3 r1c4 7
+road r1c3 r2c3 7
+road r1c4 r1c5 1
+road r1c4 r2c4 4
+road r1c5 r1c6 9
+road r1c5 r2c5 4
+road r1c6 r1c7 7
+road r1c6 r2c6 1
+road r1c7 r1c8 2
+road r1c7 r2c7 8
+road r1c8 r1c9 4
+road r1c8 r2c8 3
+road r1c9 r1c10 1
+road r1c9 r2c9 9
+road r1c10 r1c11 7
+road r1c10 r2c10 6
+road r1c11 r1c12 3
+road r1c11 r2c11 6
+road r1c12 r1c13 6
+road r1c12 r2c12 4
+road r1c13 r1c14 8
+road r1c13 r2c13 1
+road r1c14 r1c15 2
+road r1c14 r2c14 9
+road r1c15 r1c16 3
+road r1c15 r2c15 4
+road r1c16 r1c17 2
+road r1c16 r2c16 1
+road r1c17 r1c18 4
+road r1c17 r2c17 7
+road r1c18 r1c19 2
+road r1c18 r2c18 3
+road r1c19 r1c20 8
+road r1c19 r2c19 1
+road r1c20 r1c21 2
+road r1c20 r2c20 8
+road r1c21 r1c22 9
+road r1c21 r2c21 3
+road r1c22 r1c23 5
+road r1c22 r2c22 8
+road r1c23 r1c24 8
+road r1c23 r2c23 2
+road r1c24 r1c25 6
+road r1c24 r2c24 2
+road r1c25 r1c26 5
+road r1c25 r2c25 2
+road r1c26 r1c27 1
+road r1c26 r2c26 3
+road r1c27 r1c28 9
+road r1c27 r2c27 6
+road r1c28 r1c29 2
+road r1c28 r2c28 6
+road r1c29 r2c29 2
+road r2c0 r2c1 3
+road r2c0 r3c0 7
+road r2c1 r2c2 5
+road r2c1 r3c1 3
+road r2c2 r2c3 1
+road r2c2 r3c2 2
+road r2c3 r2c4 4
+road r2c3 r3c3 6
+road r2c4 r2c5 2
+road r2c4 r3c4 4
+road r2c5 r2c6 9
+road r2c5 r3c5 5
+road r2c6 r2c7 8
+road r2c6 r3c6 2
+road r2c7 r2c8 3
+road r2c7 r3c7 1
+road r2c8 r2c9 5
+road r2c8 r3c8 2
+road r2c9 r2c10 8
+road r2c9 r3c9 4
+road r2c10 r2c11 7
+road r2c10 r3c10 6
+road r2c11 r2c12 2
+road r2c11 r3c11 9
+road r2c12 r2c13 3
+road r2c12 r3c12 1
+road r2c13 r2c14 4
+road r2c13 r3c13 7
+road r2c14 r2c15 1
+road r2c14 r3c14 4
+road r2c15 r2c16 4
+road r2c15 r3c15 8
+road r2c16 r2c17 7
+road r2c16 r3c16 1
+road r2c17 r2c18 7
+road r2c17 r3c17 8
+road r2c18 r2c19 5
+road r2c18 r3c18 4
+road r2c19 r2c20 4
+road r2c19 r3c19 2
+road r2c20 r2c21 5
+road r2c20 r3c20 2
+road r2c21 r2c22 3
+road r2c21 r3c21 3
+road r2c22 r2c23 6
+road r2c22 r3c22 1
+road r2c23 r2c24 1
+road r2c23 r3c23 8
+road r2c24 r2c25 3
+road r2c24 r3c24 5
+road r2c25 r2c26 1
+road r2c25 r3c25 8
+road r2c26 r2c27 1
+road r2c26 r3c26 5
+road r2c27 r2c28 1
+road r2c27 r3c27 4
+road r2c28 r2c29 8
+road r2c28 r3c28 4
+road r2c29 r3c29 8
+road r3c0 r3c1 9
+road r3c0 r4c0 7
+road r3c1 r3c2 3
+road r3c1 r4c1 6
+road r3c2 r3c3 6
+road r3c2 r4c2 5
+road r3c3 r3c4 1
+road r3c3 r4c3 7
+road r3c4 r3c5 2
+road r3c4 r4c4 3
+road r3c5 r3c6 9
+road r3c5 r4c5 6
+road r3c6 r3c7 5
+road r3c6 r4c6 9
+road r3c7 r3c8 5
+road r3c7 r4c7 4
+road r3c8 r3c9 5
+road r3c8 r4c8 5
+road r3c9 r3c10 9
+road r3c9 r4c9 3
+road r3c10 r3c11 6
+road r3c10 r4c10 9
+road r3c11 r3c12 8
+road r3c11 r4c11 8
+road r3c12 r3c13 3
+road r3c12 r4c12 9
+road r3c13 r3c14 4
+road r3c13 r4c13 8
+road r3c14 r3c15 7
+road r3c14 r4c14 6
+road r3c15 r3c16 2
+road r3c15 r4c15 7
+road r3c16 r3c17 9
+road r3c16 r4c16 4
+road r3c17 r3c18 3
+road r3c17 r4c17 2
+road r3c18 r3c19 1
+road r3c18 r4c18 7
+road r3c19 r3c20 6
+road r3c19 r4c19 4
+road r3c20 r3c21 1
+road r3c20 r4c20 9
+road r3c21 r3c22 9
+road r3c21 r4c21 3
+road r3c22 r3c23 4
+road r3c22 r4c22 9
+road r3c23 r3c24 6
+road r3c23 r4c23 1
+road r3c24 r3c25 9
+road r3c24 r4c24 6
+road r3c25 r3c26 1
+road r3c25 r4c25 2
+road r3c26 r3c27 9
+road r3c26 r4c26 1
+road r3c27 r3c28 2
+road r3c27 r4c27 2
+road r3c28 r3c29 2
+road r3c28 r4c28 3
+road r3c29 r4c29 5
+road r4c0 r4c1 9
+road r4c0 r5c0 5
+road r4c1 r4c2 6
+road r4c1 r5c1 7
+road r4c2 r4c3 9
+road r4c2 r5c2 9
+road r4c3 r4c4 6
+road r4c3 r5c3 6
+road r4c4 r4c5 1
+road r4c4 r5c4 4
+road r4c5 r4c6 9
+road r4c5 r5c5 6
+road r4c6 r4c7 5
+road r4c6 r5c6 1
+road r4c7 r4c8 4
+road r4c7 r5c7 4
+road r4c8 r4c9 1
+road r4c8 r5c8 2
+road r4c9 r4c10 6
+road r4c9 r5c9 5
+road r4c10 r4c11 1
+road r4c10 r5c10 6
+road r4c11 r4c12 2
+road r4c11 r5c11 2
+road r4c12 r4c13 8
+road r4c12 r5c12 6
+road r4c13 r4c14 3
+road r4c13 r5c13 3
+road r4c14 r4c15 8
+road r4c14 r5c14 5
+road r4c15 r4c16 7
+road r4c15 r5c15 7
+road r4c16 r4c17 6
+road r4c16 r5c16 3
+road r4c17 r4c18 7
+road r4c17 r5c17 5
+road r4c18 r4c19 4
+road r4c18 r5c18 9
+road r4c19 r4c20 4
+road r4c19 r5c19 6
+road r4c20 r4c21 1
+road r4c20 r5c20 8
+road r4c21 r4c22 5
+road r4c21 r5c21 9
+road r4c22 r4c23 9
+road r4c22 r5c22 4
+road r4c23 r4c24 2
+road r4c23 r5c23 3
+road r4c24 r4c25 4
+road r4c24 r5c24 5
+road r4c25 r4c26 9
+road r4c25 r5c25 3
+road r4c26 r4c27 8
+road r4c26 r5c26 1
+road r4c27 r4c28 5
+road r4c27 r5c27 4
+road r4c28 r4c29 3
+road r4c28 r5c28 2
+road r4c29 r5c29 9
+road r5c0 r5c1 8
+road r5c0 r6c0 6
+road r5c1 r5c2 3
+road r5c1 r6c1 9
+road r5c2 r5c3 7
+road r5c2 r6c2 2
+road r5c3 r5c4 6
+road r5c3 r6c3 4
+road r5c4 r5c5 7
+road r5c4 r6c4 3
+road r5c5 r5c6 8
+road r5c5 r6c5 7
+road r5c6 r5c7 9
+road r5c6 r6c6 1
+road r5c7 r5c8 7
+road r5c7 r6c7 8
+road r5c8 r5c9 8
+road r5c8 r6c8 6
+road r5c9 r5c10 4
+road r5c9 r6c9 5
+road r5c10 r5c11 1
+road r5c10 r6c10 2
+road r5c11 r5c12 2
+road r5c11 r6c11 3
+road r5c12 r5c13 8
+road r5c12 r6c12 2
+road r5c13 r5c14 4
+road r5c13 r6c13 8
+road r5c14 r5c15 5
+road r5c14 r6c14 3
+road r5c15 r5c16 1
+road r5c15 r6c15 3
+road r5c16 r5c17 5
+road r5c16 r6c16 9
+road r5c17 r5c18 4
+road r5c17 r6c17 4
+road r5c18 r5c19 6
+road r5c18 r6c18 7
+road r5c19 r5c20 8
+road r5c19 r6c19 9
+road r5c20 r5c21 3
+road r5c20 r6c20 7
+road r5c21 r5c22 8
+road r5c21 r6c21 9
+road r5c22 r5c23 7
+road r5c22 r6c22 5
+road r5c23 r5c24 4
+road r5c23 r6c23 4
+road r5c24 r5c25 4
+road r5c24 r6c24 9
+road r5c25 r5c26 5
+road r5c25 r6c25 5
+road r5c26 r5c27 1
+road r5c26 r6c26 4
+road r5c27 r5c28 9
+road r5c27 r6c27 4
+road r5c28 r5c29 6
+road r5c28 r6c28 8
+road r5c29 r6c29 6
+road r6c0 r6c1 2
+road r6c0 r7c0 4
+road r6c1 r6c2 6
+road r6c1 r7c1 7
+road r6c2 r6c3 6
+road r6c2 r7c2 3
+road r6c3 r6c4 3
+road r6c3 r7c3 1
+road r6c4 r6c5 9
+road r6c4 r7c4 9
+road r6c5 r6c6 5
+road r6c5 r7c5 2
+road r6c6 r6c7 3
+road r6c6 r7c6 9
+road r6c7 r6c8 4
+road r6c7 r7c7 7
+road r6c8 r6c9 3
+road r6c8 r7c8 2
+road r6c9 r6c10 6
+road r6c9 r7c9 9
+road r6c10 r6c11 5
+road r6c10 r7c10 1
+road r6c11 r6c12 1
+road r6c11 r7c11 3
+road r6c12 r6c13 8
+road r6c12 r7c12 6
+road r6c13 r6c14 3
+road r6c13 r7c13 8
+road r6c14 r6c15 3
+road r6c14 r7c14 9
+road r6c15 r6c16 3
+road r6c15 r7c15 2
+road r6c16 r6c17 5
+road r6c16 r7c16 6
+road r6c17 r6c18 2
+road r6c17 r7c17 8
+road r6c18 r6c19 3
+road r6c18 r7c18 3
+road r6c19 r6c20 2
+road r6c19 r7c19 9
+road r6c20 r6c21 5
+road r6c20 r7c20 8
+road r6c21 r6c22 9
+road r6c21 r7c21 8
+road r6c22 r6c23 6
+road r6c22 r7c22 6
+road r6c23 r6c24 4
+road r6c23 r7c23 3
+road r6c24 r6c25 1
+road r6c24 r7c24 2
+road r6c25 r6c26 6
+road r6c25 r7c25 2
+road r6c26 r6c27 1
+road r6c26 r7c26 9
+road r6c27 r6c28 9
+road r6c27 r7c27 7
+road r6c28 r6c29 6
+road r6c28 r7c28 7
+road r6c29 r7c29 2
+road r7c0 r7c1 4
+road r7c0 r8c0 7
+road r7c1 r7c2 5
+road r7c1 r8c1 1
+road r7c2 r7c3 6
+road r7c2 r8c2 9
+road r7c3 r7c4 5
+road r7c3 r8c3 3
+road r7c4 r7c5 6
+road r7c4 r8c4 7
+road r7c5 r7c6 9
+road r7c5 r8c5 2
+road r7c6 r7c7 1
+road r7c6 r8c6 6
+road r7c7 r7c8 9
+road r7c7 r8c7 2
+road r7c8 r7c9 3
+road r7c8 r8c8 8
+road r7c9 r7c10 1
+road r7c9 r8c9 8
+road r7c10 r7c11 7
+road r7c10 r8c10 7
+road r7c11 r7c12 2
+road r7c11 r8c11 6
+road r7c12 r7c13 1
+road r7c12 r8c12 8
+road r7c13 r7c14 7
+road r7c13 r8c13 4
+road r7c14 r7c15 5
+road r7c14 r8c14 2
+road r7c15 r7c16 9
+road r7c15 r8c15 3
+road r7c16 r7c17 5
+road r7c16 r8c16 2
+road r7c17 r7c18 1
+road r7c17 r8c17 8
+road r7c18 r7c19 4
+road r7c18 r8c18 6
+road r7c19 r7c20 7
+road r7c19 r8c19 3
+road r7c20 r7c21 8
+road r7c20 r8c20 4
+road r7c21 r7c22 3
+road r7c21 r8c21 2
+road r7c22 r7c23 1
+road r7c22 r8c22 2
+road r7c23 r7c24 4
+road r7c23 r8c23 5
+road r7c24 r7c25 7
+road r7c24 r8c24 8
+road r7c25 r7c26 5
+road r7c25 r8c25 5
+road r7c26 r7c27 6
+road r7c26 r8c26 5
+road r7c27 r7c28 6
+road r7c27 r8c27 5
+road r7c28 r7c29 2
+road r7c28 r8c28 9
+road r7c29 r8c29 8
+road r8c0 r8c1 4
+road r8c0 r9c0 3
+road r8c1 r8c2 4
+road r8c1 r9c1 7
+road r8c2 r8c3 7
+road r8c2 r9c2 3
+road r8c3 r8c4 2
+road r8c3 r9c3 5
+road r8c4 r8c5 6
+road r8c4 r9c4 1
+road r8c5 r8c6 8
+road r8c5 r9c5 9
+road r8c6 r8c7 9
+road r8c6 r9c6 8
+road r8c7 r8c8 4
+road r8c7 r9c7 1
+road r8c8 r8c9 4
+road r8c8 r9c8 3
+road r8c9 r8c10 5
+road r8c9 r9c9 1
+road r8c10 r8c11 1
+road r8c10 r9c10 8
+road r8c11 r8c12 2
+road r8c11 r9c11 9
+road r8c12 r8c13 6
+road r8c12 r9c12 4
+road r8c13 r8c14 2
+road r8c13 r9c13 4
+road r8c14 r8c15 6
+road r8c14 r9c14 7
+road r8c15 r8c16 3
+road r8c15 r9c15 3
+road r8c16 r8c17 5
+road r8c16 r9c16 4
+road r8c17 r8c18 8
+road r8c17 r9c17 7
+road r8c18 r8c19 2
+road r8c18 r9c18 6
+road r8c19 r8c20 3
+road r8c19 r9c19 5
+road r8c20 r8c21 3
+road r8c20 r9c20 2
+road r8c21 r8c22 5
+road r8c21 r9c21 4
+road r8c22 r8c23 6
+road r8c22 r9c22 6
+road r8c23 r8c24 5
+road r8c23 r9c23 2
+road r8c24 r8c25 5
+road r8c24 r9c24 7
+road r8c25 r8c26 9
+road r8c25 r9c25 4
+road r8c26 r8c27 4
+road r8c26 r9c26 4
+road r8c27 r8c28 3
+road r8c27 r9c27 3
+road r8c28 r8c29 6
+road r8c28 r9c28 5
+road r8c29 r9c29 3
+road r9c0 r9c1 2
+road r9c0 r10c0 4
+road r9c1 r9c2 1
+road r9c1 r10c1 8
+road r9c2 r9c3 5
+road r9c2 r10c2 2
+road r9c3 r9c4 2
+road r9c3 r10c3 7
+road r9c4 r9c5 2
+road r9c4 r10c4 1
+road r9c5 r9c6 1
+road r9c5 r10c5 8
+road r9c6 r9c7 8
+road r9c6 r10c6 7
+road r9c7 r9c8 9
+road r9c7 r10c7 3
+road r9c8 r9c9 9
+road r9c8 r10c8 4
+road r9c9 r9c10 3
+road r9c9 r10c9 6
+road r9c10 r9c11 5
+road r9c10 r10c10 1
+road r9c11 r9c12 6
+road r9c11 r10c11 3
+road r9c12 r9c13 2
+road r9c12 r10c12 1
+road r9c13 r9c14 9
+road r9c13 r10c13 8
+road r9c14 r9c15 4
+road r9c14 r10c14 9
+road r9c15 r9c16 9
+road r9c15 r10c15 9
+road r9c16 r9c17 6
+road r9c16 r10c16 4
+road r9c17 r9c18 3
+road r9c17 r10c17 5
+road r9c18 r9c19 6
+road r9c18 r10c18 1
+road r9c19 r9c20 9
+road r9c19 r10c19 2
+road r9c20 r9c21 1
+road r9c20 r10c20 1
+road r9c21 r9c22 5
+road r9c21 r10c21 9
+road r9c22 r9c23 7
+road r9c22 r10c22 7
+road r9c23 r9c24 2
+road r9c23 r10c23 6
+road r9c24 r9c25 7
+road r9c24 r10c24 9
+road r9c25 r9c26 9
+road r9c25 r10c25 2
+road r9c26 r9c27 6
+road r9c26 r10c26 2
+road r9c27 r9c28 8
+road r9c27 r10c27 6
+road r9c28 r9c29 7
+road r9c28 r10c28 4
+road r9c29 r10c29 4
+road r10c0 r10c1 3
+road r10c0 r11c0 2
+road r10c1 r10c2 5
+road r10c1 r11c1 1
+road r10c2 r10c3 7
+road r10c2 r11c2 6
+road r10c3 r10c4 5
+road r10c3 r11c3 6
+road r10c4 r10c5 2
+road r10c4 r11c4 5
+road r10c5 r10c6 6
+road r10c5 r11c5 6
+road r10c6 r10c7 5
+road r10c6 r11c6 2
+road r10c7 r10c8 5
+road r10c7 r11c7 6
+road r10c8 r10c9 6
+road r10c8 r11c8 5
+road r10c9 r10c10 7
+road r10c9 r11c9 9
+road r10c10 r10c11 3
+road r10c10 r11c10 2
+road r10c11 r10c12 8
+road r10c11 r11c11 3
+road r10c12 r10c13 4
+road r10c12 r11c12 3
+road r10c13 r10c14 4
+road r10c13 r11c13 7
+road r10c14 r10c15 2
+road r10c14 r11c14 6
+road r10c15 r10c16 8
+road r10c15 r11c15 8
+road r10c16 r10c17 8
+road r10c16 r11c16 9
+road r10c17 r10c18 8
+road r10c17 r11c17 2
+road r10c18 r10c19 6
+road r10c18 r11c18 8
+road r10c19 r10c20 2
+road r10c19 r11c19 8
+road r10c20 r10c21 5
+road r10c20 r11c20 5
+road r10c21 r10c22 3
+road r10c21 r11c21 9
+road r10c22 r10c23 8
+road r10c22 r11c22 9
+road r10c23 r10c24 5
+road r10c23 r11c23 8
+road r10c24 r10c25 7
+road r10c24 r11c24 7
+road r10c25 r10c26 7
+road r10c25 r11c25 4
+road r10c26 r10c27 8
+road r10c26 r11c26 6
+road r10c27 r10c28 8
+road r10c27 r11c27 2
+road r10c28 r10c29 8
+road r10c28 r11c28 5
+road r10c29 r11c29 2
+road r11c0 r11c1 6
+road r11c0 r12c0 1
+road r11c1 r11c2 6
+road r11c1 r12c1 1
+road r11c2 r11c3 8
+road r11c2 r12c2 5
+road r11c3 r11c4 7
+road r11c3 r12c3 1
+road r11c4 r11c5 4
+road r11c4 r12c4 7
+road r11c5 r11c6 6
+road r11c5 r12c5 8
+road r11c6 r11c7 4
+road r11c6 r12c6 1
+road r11c7 r11c8 7
+road r11c7 r12c7 3
+road r11c8 r11c9 4
+road r11c8 r12c8 6
+road r11c9 r11c10 4
+road r11c9 r12c9 1
+road r11c10 r11c11 9
+road r11c10 r12c10 5
+road r11c11 r11c12 1
+road r11c11 r12c11 6
+road r11c12 r11c13 2
+road r11c12 r12c12 1
+road r11c13 r11c14 2
+road r11c13 r12c13 7
+road r11c14 r11c15 9
+road r11c14 r12c14 3
+road r11c15 r11c16 3
+road r11c15 r12c15 9
+road r11c16 r11c17 2
+road r11c16 r12c16 9
+road r11c17 r11c18 2
+road r11c17 r12c17 9
+road r11c18 r11c19 5
+road r11c18 r12c18 1
+road r11c19 r11c20 7
+road r11c19 r12c19 6
+road r11c20 r11c21 4
+road r11c20 r12c20 2
+road r11c21 r11c22 1
+road r11c21 r12c21 2
+road r11c22 r11c23 4
+road r11c22 r12c22 9
+road r11c23 r11c24 9
+road r11c23 r12c23 3
+road r11c24 r11c25 9
+road r11c24 r12c24 9
+road r11c25 r11c26 4
+road r11c25 r12c25 2
+road r11c26 r11c27 3
+road r11c26 r12c26 5
+road r11c27 r11c28 5
+road r11c27 r12c27 3
+road r11c28 r11c29 5
+road r11c28 r12c28 8
+road r11c29 r12c29 6
+road r12c0 r12c1 1
+road r12c0 r13c0 9
+road r12c1 r12c2 7
+road r12c1 r13c1 6
+road r12c2 r12c3 7
+road r12c2 r13c2 4
+road r12c3 r12c4 5
+road r12c3 r13c3 6
+road r12c4 r12c5 7
+road r12c4 r13c4 5
+road r12c5 r12c6 4
+road r12c5 r13c5 5
+road r12c6 r12c7 4
+road r12c6 r13c6 1
+road r12c7 r12c8 5
+road r12c7 r13c7 5
+road r12c8 r12c9 2
+road r12c8 r13c8 3
+road r12c9 r12c10 3
+road r12c9 r13c9 7
+road r12c10 r12c11 6
+road r12c10 r13c10 9
+road r12c11 r12c12 5
+road r12c11 r13c11 9
+road r12c12 r12c13 9
+road r12c12 r13c12 2
+road r12c13 r12c14 8
+road r12c13 r13c13 3
+road r12c14 r12c15 9
+road r12c14 r13c14 8
+road r12c15 r12c16 4
+road r12c15 r13c15 5
+road r12c16 r12c17 1
+road r12c16 r13c16 3
+road r12c17 r12c18 9
+road r12c17 r13c17 1
+road r12c18 r12c19 2
+road r12c18 r13c18 9
+road r12c19 r12c20 9
+road r12c19 r13c19 4
+road r12c20 r12c21 5
+road r12c20 r13c20 2
+road r12c21 r12c22 1
+road r12c21 r13c21 7
+road r12c22 r12c23 5
+road r12c22 r13c22 5
+road r12c23 r12c24 7
+road r12c23 r13c23 2
+road r12c24 r12c25 3
+road r12c24 r13c24 5
+road r12c25 r12c26 8
+road r12c25 r13c25 5
+road r12c26 r12c27 9
+road r12c26 r13c26 2
+road r12c27 r12c28 6
+road r12c27 r13c27 3
+road r12c28 r12c29 5
+road r12c28 r13c28 1
+road r12c29 r13c29 7
+road r13c0 r13c1 5
+road r13c0 r14c0 7
+road r13c1 r13c2 1
+road r13c1 r14c1 2
+road r13c2 r13c3 9
+road r13c2 r14c2 8
+road r13c3 r13c4 2
+road r13c3 r14c3 6
+road r13c4 r13c5 5
+road r13c4 r14c4 9
+road r13c5 r13c6 3
+road r13c5 r14c5 3
+road r13c6 r13c7 4
+road r13c6 r14c6 4
+road r13c7 r13c8 8
+road r13c7 r14c7 1
+road r13c8 r13c9 8
+road r13c8 r14c8 7
+road r13c9 r13c10 2
+road r13c9 r14c9 7
+road r13c10 r13c11 7
+road r13c10 r14c10 3
+road r13c11 r13c12 6
+road r13c11 r14c11 9
+road r13c12 r13c13 2
+road r13c12 r14c12 4
+road r13c13 r13c14 8
+road r13c13 r14c13 7
+road r13c14 r13c15 5
+road r13c14 r14c14 9
+road r13c15 r13c16 8
+road r13c15 r14c15 4
+road r13c16 r13c17 5
+road r13c16 r14c16 9
+road r13c17 r13c18 9
+road r13c17 r14c17 4
+road r13c18 r13c19 7
+road r13c18 r14c18 3
+road r13c19 r13c20 8
+road r13c19 r14c19 2
+road r13c20 r13c21 7
+road r13c20 r14c20 7
+road r13c21 r13c22 4
+road r13c21 r14c21 8
+road r13c22 r13c23 8
+road r13c22 r14c22 1
+road r13c23 r13c24 5
+road r13c23 r14c23 7
+road r13c24 r13c25 9
+road r13c24 r14c24 2
+road r13c25 r13c26 4
+road r13c25 r14c25 2
+road r13c26 r13c27 4
+road r13c26 r14c26 6
+road r13c27 r13c28 9
+road r13c27 r14c27 7
+road r13c28 r13c29 7
+road r13c28 r14c28 3
+road r13c29 r14c29 7
+road r14c0 r14c1 9
+road r14c0 r15c0 4
+road r14c1 r14c2 6
+road r14c1 r15c1 8
+road r14c2 r14c3 1
+road r14c2 r15c2 5
+road r14c3 r14c4 9
+road r14c3 r15c3 4
+road r14c4 r14c5 8
+road r14c4 r15c4 4
+road r14c5 r14c6 6
+road r14c5 r15c5 1
+road r14c6 r14c7 3
+road r14c6 r15c6 3
+road r14c7 r14c8 1
+road r14c7 r15c7 4
+road r14c8 r14c9 7
+road r14c8 r15c8 9
+road r14c9 r14c10 9
+road r14c9 r15c9 9
+road r14c10 r14c11 2
+road r14c10 r15c10 9
+road r14c11 r14c12 2
+road r14c11 r15c11 7
+road r14c12 r14c13 5
+road r14c12 r15c12 1
+road r14c13 r14c14 7
+road r14c13 r15c13 6
+road r14c14 r14c15 8
+road r14c14 r15c14 6
+road r14c15 r14c16 7
+road r14c15 r15c15 5
+road r14c16 r14c17 1
+road r14c16 r15c16 7
+road r14c17 r14c18 9
+road r14c17 r15c17 3
+road r14c18 r14c19 3
+road r14c18 r15c18 9
+road r14c19 r14c20 5
+road r14c19 r15c19 9
+road r14c20 r14c21 9
+road r14c20 r15c20 6
+road r14c21 r14c22 6
+road r14c21 r15c21 3
+road r14c22 r14c23 8
+road r14c22 r15c22 1
+road r14c23 r14c24 2
+road r14c23 r15c23 8
+road r14c24 r14c25 7
+road r14c24 r15c24 5
+road r14c25 r14c26 8
+road r14c25 r15c25 2
+road r14c26 r14c27 4
+road r14c26 r15c26 9
+road r14c27 r14c28 8
+road r14c27 r15c27 9
+road r14c28 r14c29 4
+road r14c28 r15c28 1
+road r14c29 r15c29 3
+road r15c0 r15c1 3
+road r15c0 r16c0 3
+road r15c1 r15c2 1
+road r15c1 r16c1 5
+road r15c2 r15c3 6
+road r15c2 r16c2 1
+road r15c3 r15c4 6
+road r15c3 r16c3 1
+road r15c4 r15c5 6
+road r15c4 r16c4 2
+road r15c5 r15c6 1
+road r15c5 r16c5 4
+road r15c6 r15c7 8
+road r15c6 r16c6 4
+road r15c7 r15c8 7
+road r15c7 r16c7 2
+road r15c8 r15c9 3
+road r15c8 r16c8 5
+road r15c9 r15c10 2
+road r15c9 r16c9 5
+road r15c10 r15c11 9
+road r15c10 r16c10 1
+road r15c11 r15c12 2
+road r15c11 r16c11 9
+road r15c12 r15c13 2
+road r15c12 r16c12 4
+road r15c13 r15c14 4
+road r15c13 r16c13 7
+road r15c14 r15c15 9
+road r15c14 r16c14 2
+road r15c15 r15c16 3
+road r15c15 r16c15 3
+road r15c16 r15c17 6
+road r15c16 r16c16 8
+road r15c17 r15c18 2
+road r15c17 r16c17 9
+road r15c18 r15c19 2
+road r15c18 r16c18 9
+road r15c19 r15c20 1
+road r15c19 r16c19 1
+road r15c20 r15c21 1
+road r15c20 r16c20 8
+road r15c21 r15c22 5
+road r15c21 r16c21 3
+road r15c22 r15c23 1
+road r15c22 r16c22 3
+road r15c23 r15c24 5
+road r15c23 r16c23 1
+road r15c24 r15c25 6
+road r15c24 r16c24 1
+road r15c25 r15c26 5
+road r15c25 r16c25 5
+road r15c26 r15c27 8
+road r15c26 r16c26 8
+road r15c27 r15c28 1
+road r15c27 r16c27 1
+road r15c28 r15c29 4
+road r15c28 r16c28 1
+road r15c29 r16c29 7
+road r16c0 r16c1 8
+road r16c0 r17c0 6
+road r16c1 r16c2 6
+road r16c1 r17c1 4
+road r16c2 r16c3 8
+road r16c2 r17c2 1
+road r16c3 r16c4 3
+road r16c3 r17c3 3
+road r16c4 r16c5 5
+road r16c4 r17c4 2
+road r16c5 r16c6 6
+road r16c5 r17c5 3
+road r16c6 r16c7 8
+road r16c6 r17c6 8
+road r16c7 r16c8 9
+road r16c7 r17c7 8
+road r16c8 r16c9 9
+road r16c8 r17c8 5
+road r16c9 r16c10 6
+road r16c9 r17c9 4
+road r16c10 r16c11 4
+road r16c10 r17c10 3
+road r16c11 r16c12 7
+road r16c11 r17c11 1
+road r16c12 r16c13 1
+road r16c12 r17c12 6
+road r16c13 r16c14 5
+road r16c13 r17c13 4
+road r16c14 r16c15 3
+road r16c14 r17c14 1
+road r16c15 r16c16 4
+road r16c15 r17c15 1
+road r16c16 r16c17 7
+road r16c16 r17c16 9
+road r16c17 r16c18 5
+road r16c17 r17c17 1
+road r16c18 r16c19 1
+road r16c18 r17c18 8
+road r16c19 r16c20 4
+road r16c19 r17c19 7
+road r16c20 r16c21 2
+road r16c20 r17c20 3
+road r16c21 r16c22 5
+road r16c21 r17c21 1
+road r16c22 r16c23 5
+road r16c22 r17c22 8
+road r16c23 r16c24 6
+road r16c23 r17c23 8
+road r16c24 r16c25 4
+road r16c24 r17c24 2
+road r16c25 r16c26 1
+road r16c25 r17c25 1
+road r16c26 r16c27 6
+road r16c26 r17c26 7
+road r16c27 r16c28 5
+road r16c27 r17c27 3
+road r16c28 r16c29 4
+road r16c28 r17c28 3
+road r16c29 r17c29 2
+road r17c0 r17c1 3
+road r17c0 r18c0 9
+road r17c1 r17c2 2
+road r17c1 r18c1 9
+road r17c2 r17c3 6
+road r17c2 r18c2 5
+road r17c3 r17c4 6
+road r17c3 r18c3 5
+road r17c4 r17c5 3
+road r17c4 r18c4 9
+road r17c5 r17c6 9
+road r17c5 r18c5 9
+road r17c6 r17c7 2
+road r17c6 r18c6 1
+road r17c7 r17c8 9
+road r17c7 r18c7 1
+road r17c8 r17c9 3
+road r17c8 r18c8 6
+road r17c9 r17c10 9
+road r17c9 r18c9 3
+road r17c10 r17c11 1
+road r17c10 r18c10 2
+road r17c11 r17c12 9
+road r17c11 r18c11 2
+road r17c12 r17c13 3
+road r17c12 r18c12 2
+road r17c13 r17c14 9
+road r17c13 r18c13 8
+road r17c14 r17c15 8
+road r17c14 r18c14 3
+road r17c15 r17c16 9
+road r17c15 r18c15 5
+road r17c16 r17c17 5
+road r17c16 r18c16 8
+road r17c17 r17c18 4
+road r17c17 r18c17 4
+road r17c18 r17c19 8
+road r17c18 r18c18 3
+road r17c19 r17c20 8
+road r17c19 r18c19 6
+road r17c20 r17c21 2
+road r17c20 r18c20 3
+road r17c21 r17c22 1
+road r17c21 r18c21 2
+road r17c22 r17c23 5
+road r17c22 r18c22 2
+road r17c23 r17c24 5
+road r17c23 r18c23 1
+road r17c24 r17c25 4
+road r17c24 r18c24 9
+road r17c25 r17c26 3
+road r17c25 r18c25 8
+road r17c26 r17c27 6
+road r17c26 r18c26 3
+road r17c27 r17c28 8
+road r17c27 r18c27 3
+road r17c28 r17c29 8
+road r17c28 r18c28 2
+road r17c29 r18c29 7
+road r18c0 r18c1 6
+road r18c0 r19c0 1
+road r18c1 r18c2 8
+road r18c1 r19c1 1
+road r18c2 r18c3 9
+road r18c2 r19c2 4
+road r18c3 r18c4 9
+road r18c3 r19c3 7
+road r18c4 r18c5 8
+road r18c4 r19c4 6
+road r18c5 r18c6 1
+road r18c5 r19c5 2
+road r18c6 r18c7 7
+road r18c6 r19c6 5
+road r18c7 r18c8 7
+road r18c7 r19c7 9
+road r18c8 r18c9 3
+road r18c8 r19c8 4
+road r18c9 r18c10 7
+road r18c9 r19c9 8
+road r18c10 r18c11 1
+road r18c10 r19c10 1
+road r18c11 r18c12 1
+road r18c11 r19c11 5
+road r18c12 r18c13 7
+road r18c12 r19c12 3
+road r18c13 r18c14 9
+road r18c13 r19c13 2
+road r18c14 r18c15 1
+road r18c14 r19c14 4
+road r18c15 r18c16 7
+road r18c15 r19c15 9
+road r18c16 r18c17 8
+road r18c16 r19c16 9
+road r18c17 r18c18 8
+road r18c17 r19c17 4
+road r18c18 r18c19 6
+road r18c18 r19c18 3
+road r18c19 r18c20 2
+road r18c19 r19c19 6
+road r18c20 r18c21 6
+road r18c20 r19c20 7
+road r18c21 r18c22 1
+road r18c21 r19c21 9
+road r18c22 r18c23 2
+road r18c22 r19c22 8
+road r18c23 r18c24 4
+road r18c23 r19c23 8
+road r18c24 r18c25 1
+road r18c24 r19c24 9
+road r18c25 r18c26 7
+road r18c25 r19c25 2
+road r18c26 r18c27 2
+road r18c26 r19c26 1
+road r18c27 r18c28 3
+road r18c27 r19c27 7
+road r18c28 r18c29 4
+road r18c28 r19c28 2
+road r18c29 r19c29 4
+road r19c0 r19c1 9
+road r19c0 r20c0 2
+road r19c1 r19c2 6
+road r19c1 r20c1 4
+road r19c2 r19c3 6
+road r19c2 r20c2 7
+road r19c3 r19c4 9
+road r19c3 r20c3 6
+road r19c4 r19c5 5
+road r19c4 r20c4 1
+road r19c5 r19c6 9
+road r19c5 r20c5 8
+road r19c6 r19c7 7
+road r19c6 r20c6 8
+road r19c7 r19c8 6
+road r19c7 r20c7 1
+road r19c8 r19c9 7
+road r19c8 r20c8 4
+road r19c9 r19c10 8
+road r19c9 r20c9 9
+road r19c10 r19c11 4
+road r19c10 r20c10 7
+road r19c11 r19c12 1
+road r19c11 r20c11 9
+road r19c12 r19c13 5
+road r19c12 r20c12 7
+road r19c13 r19c14 7
+road r19c13 r20c13 3
+road r19c14 r19c15 9
+road r19c14 r20c14 4
+road r19c15 r19c16 2
+road r19c15 r20c15 5
+road r19c16 r19c17 6
+road r19c16 r20c16 7
+road r19c17 r19c18 2
+road r19c17 r20c17 4
+road r19c18 r19c19 5
+road r19c18 r20c18 8
+road r19c19 r19c20 4
+road r19c19 r20c19 8
+road r19c20 r19c21 3
+road r19c20 r20c20 3
+road r19c21 r19c22 4
+road r19c21 r20c21 2
+road r19c22 r19c23 6
+road r19c22 r20c22 8
+road r19c23 r19c24 3
+road r19c23 r20c23 5
+road r19c24 r19c25 3
+road r19c24 r20c24 6
+road r19c25 r19c26 5
+road r19c25 r20c25 3
+road r19c26 r19c27 5
+road r19c26 r20c26 2
+road r19c27 r19c28 2
+road r19c27 r20c27 6
+road r19c28 r19c29 2
+road r19c28 r20c28 1
+road r19c29 r20c29 5
+road r20c0 r20c1 1
+road r20c0 r21c0 4
+road r20c1 r20c2 7
+road r20c1 r21c1 5
+road r20c2 r20c3 4
+road r20c2 r21c2 1
+road r20c3 r20c4 3
+road r20c3 r21c3 3
+road r20c4 r20c5 8
+road r20c4 r21c4 1
+road r20c5 r20c6 6
+road r20c5 r21c5 7
+road r20c6 r20c7 1
+road r20c6 r21c6 9
+road r20c7 r20c8 7
+road r20c7 r21c7 8
+road r20c8 r20c9 1
+road r20c8 r21c8 9
+road r20c9 r20c10 3
+road r20c9 r21c9 5
+road r20c10 r20c11 5
+road r20c10 r21c10 8
+road r20c11 r20c12 2
+road r20c11 r21c11 8
+road r20c12 r20c13 6
+road r20c12 r21c12 3
+road r20c13 r20c14 3
+road r20c13 r21c13 2
+road r20c14 r20c15 3
+road r20c14 r21c14 7
+road r20c15 r20c16 5
+road r20c15 r21c15 2
+road r20c16 r20c17 1
+road r20c16 r21c16 7
+road r20c17 r20c18 8
+road r20c17 r21c17 4
+road r20c18 r20c19 8
+road r20c18 r21c18 7
+road r20c19 r20c20 7
+road r20c19 r21c19 7
+road r20c20 r20c21 5
+road r20c20 r21c20 5
+road r20c21 r20c22 6
+road r20c21 r21c21 4
+road r20c22 r20c23 2
+road r20c22 r21c22 7
+road r20c23 r20c24 3
+road r20c23 r21c23 6
+road r20c24 r20c25 9
+road r20c24 r21c24 8
+road r20c25 r20c26 8
+road r20c25 r21c25 3
+road r20c26 r20c27 9
+road r20c26 r21c26 8
+road r20c27 r20c28 7
+road r20c27 r21c27 6
+road r20c28 r20c29 1
+road r20c28 r21c28 4
+road r20c29 r21c29 7
+road r21c0 r21c1 5
+road r21c0 r22c0 2
+road r21c1 r21c2 7
+road r21c1 r22c1 7
+road r21c2 r21c3 5
+road r21c2 r22c2 5
+road r21c3 r21c4 5
+road r21c3 r22c3 8
+road r21c4 r21c5 5
+road r21c4 r22c4 5
+road r21c5 r21c6 3
+road r21c5 r22c5 9
+road r21c6 r21c7 9
+road r21c6 r22c6 8
+road r21c7 r21c8 8
+road r21c7 r22c7 2
+road r21c8 r21c9 9
+road r21c8 r22c8 6
+road r21c9 r21c10 3
+road r21c9 r22c9 1
+road r21c10 r21c11 5
+road r21c10 r22c10 9
+road r21c11 r21c12 1
+road r21c11 r22c11 1
+road r21c12 r21c13 5
+road r21c12 r22c12 1
+road r21c13 r21c14 6
+road r21c13 r22c13 2
+road r21c14 r21c15 4
+road r21c14 r22c14 8
+road r21c15 r21c16 7
+road r21c15 r22c15 2
+road r21c16 r21c17 9
+road r21c16 r22c16 2
+road r21c17 r21c18 7
+road r21c17 r22c17 7
+road r21c18 r21c19 5
+road r21c18 r22c18 2
+road r21c19 r21c20 7
+road r21c19 r22c19 7
+road r21c20 r21c21 5
+road r21c20 r22c20 1
+road r21c21 r21c22 1
+road r21c21 r22c21 6
+road r21c22 r21c23 2
+road r21c22 r22c22 7
+road r21c23 r21c24 1
+road r21c23 r22c23 9
+road r21c24 r21c25 6
+road r21c24 r22c24 4
+road r21c25 r21c26 4
+road r21c25 r22c25 8
+road r21c26 r21c27 9
+road r21c26 r22c26 7
+road r21c27 r21c28 5
+road r21c27 r22c27 2
+road r21c28 r21c29 7
+road r21c28 r22c28 3
+road r21c29 r22c29 6
+road r22c0 r22c1 3
+road r22c0 r23c0 3
+road r22c1 r22c2 7
+road r22c1 r23c1 5
+road r22c2 r22c3 7
+road r22c2 r23c2 1
+road r22c3 r22c4 8
+road r22c3 r23c3 5
+road r22c4 r22c5 6
+road r22c4 r23c4 6
+road r22c5 r22c6 7
+road r22c5 r23c5 1
+road r22c6 r22c7 9
+road r22c6 r23c6 5
+road r22c7 r22c8 6
+road r22c7 r23c7 8
+road r22c8 r22c9 1
+road r22c8 r23c8 3
+road r22c9 r22c10 3
+road r22c9 r23c9 4
+road r22c10 r22c11 5
+road r22c10 r23c10 2
+road r22c11 r22c12 6
+road r22c11 r23c11 4
+road r22c12 r22c13 9
+road r22c12 r23c12 6
+road r22c13 r22c14 1
+road r22c13 r23c13 7
+road r22c14 r22c15 5
+road r22c14 r23c14 1
+road r22c15 r22c16 8
+road r22c15 r23c15 4
+road r22c16 r22c17 3
+road r22c16 r23c16 7
+road r22c17 r22c18 6
+road r22c17 r23c17 1
+road r22c18 r22c19 4
+road r22c18 r23c18 4
+road r22c19 r22c20 5
+road r22c19 r23c19 6
+road r22c20 r22c21 2
+road r22c20 r23c20 7
+road r22c21 r22c22 9
+road r22c21 r23c21 1
+road r22c22 r22c23 1
+road r22c22 r23c22 1
+road r22c23 r22c24 9
+road r22c23 r23c23 8
+road r22c24 r22c25 9
+road r22c24 r23c24 8
+road r22c25 r22c26 2
+road r22c25 r23c25 1
+road r22c26 r22c27 2
+road r22c26 r23c26 8
+road r22c27 r22c28 1
+road r22c27 r23c27 4
+road r22c28 r22c29 1
+road r22c28 r23c28 8
+road r22c29 r23c29 6
+road r23c0 r23c1 4
+road r23c0 r24c0 2
+road r23c1 r23c2 1
+road r23c1 r24c1 3
+road r23c2 r23c3 6
+road r23c2 r24c2 4
+road r23c3 r23c4 4
+road r23c3 r24c3 7
+road r23c4 r23c5 1
+road r23c4 r24c4 8
+road r23c5 r23c6 1
+road r23c5 r24c5 8
+road r23c6 r23c7 2
+road r23c6 r24c6 3
+road r23c7 r23c8 2
+road r23c7 r24c7 1
+road r23c8 r23c9 1
+road r23c8 r24c8 6
+road r23c9 r23c10 1
+road r23c9 r24c9 9
+road r23c10 r23c11 3
+road r23c10 r24c10 6
+road r23c11 r23c12 3
+road r23c11 r24c11 7
+road r23c12 r23c13 9
+road r23c12 r24c12 6
+road r23c13 r23c14 7
+road r23c13 r24c13 2
+road r23c14 r23c15 2
+road r23c14 r24c14 2
+road r23c15 r23c16 9
+road r23c15 r24c15 5
+road r23c16 r23c17 3
+road r23c16 r24c16 1
+road r23c17 r23c18 6
+road r23c17 r24c17 9
+road r23c18 r23c19 3
+road r23c18 r24c18 6
+road r23c19 r23c20 9
+road r23c19 r24c19 9
+road r23c20 r23c21 8
+road r23c20 r24c20 2
+road r23c21 r23c22 5
+road r23c21 r24c21 3
+road r23c22 r23c23 7
+road r23c22 r24c22 6
+road r23c23 r23c24 8
+road r23c23 r24c23 7
+road r23c24 r23c25 2
+road r23c24 r24c24 8
+road r23c25 r23c26 8
+road r23c25 r24c25 8
+road r23c26 r23c27 7
+road r23c26 r24c26 9
+road r23c27 r23c28 5
+road r23c27 r24c27 5
+road r23c28 r23c29 7
+road r23c28 r24c28 3
+road r23c29 r24c29 9
+road r24c0 r24c1 7
+road r24c0 r25c0 9
+road r24c1 r24c2 6
+road r24c1 r25c1 6
+road r24c2 r24c3 9
+road r24c2 r25c2 2
+road r24c3 r24c4 1
+road r24c3 r25c3 8
+road r24c4 r24c5 7
+road r24c4 r25c4 5
+road r24c5 r24c6 5
+road r24c5 r25c5 2
+road r24c6 r24c7 8
+road r24c6 r25c6 2
+road r24c7 r24c8 1
+road r24c7 r25c7 8
+road r24c8 r24c9 7
+road r24c8 r25c8 3
+road r24c9 r24c10 6
+road r24c9 r25c9 2
+road r24c10 r24c11 2
+road r24c10 r25c10 2
+road r24c11 r24c12 7
+road r24c11 r25c11 4
+road r24c12 r24c13 4
+road r24c12 r25c12 2
+road r24c13 r24c14 1
+road r24c13 r25c13 3
+road r24c14 r24c15 2
+road r24c14 r25c14 7
+road r24c15 r24c16 1
+road r24c15 r25c15 8
+road r24c16 r24c17 5
+road r24c16 r25c16 8
+road r24c17 r24c18 6
+road r24c17 r25c17 8
+road r24c18 r24c19 5
+road r24c18 r25c18 5
+road r24c19 r24c20 6
+road r24c19 r25c19 5
+road r24c20 r24c21 2
+road r24c20 r25c20 9
+road r24c21 r24c22 5
+road r24c21 r25c21 6
+road r24c22 r24c23 1
+road r24c22 r25c22 7
+road r24c23 r24c24 7
+road r24c23 r25c23 6
+road r24c24 r24c25 8
+road r24c24 r25c24 4
+road r24c25 r24c26 7
+road r24c25 r25c25 4
+road r24c26 r24c27 3
+road r24c26 r25c26 9
+road r24c27 r24c28 7
+road r24c27 r25c27 3
+road r24c28 r24c29 7
+road r24c28 r25c28 4
+road r24c29 r25c29 9
+road r25c0 r25c1 7
+road r25c0 r26c0 5
+road r25c1 r25c2 6
+road r25c1 r26c1 8
+road r25c2 r25c3 1
+road r25c2 r26c2 6
+road r25c3 r25c4 8
+road r25c3 r26c3 7
+road r25c4 r25c5 5
+road r25c4 r26c4 6
+road r25c5 r25c6 5
+road r25c5 r26c5 4
+road r25c6 r25c7 5
+road r25c6 r26c6 1
+road r25c7 r25c8 5
+road r25c7 r26c7 8
+road r25c8 r25c9 4
+road r25c8 r26c8 8
+road r25c9 r25c10 7
+road r25c9 r26c9 3
+road r25c10 r25c11 8
+road r25c10 r26c10 3
+road r25c11 r25c12 2
+road r25c11 r26c11 2
+road r25c12 r25c13 4
+road r25c12 r26c12 7
+road r25c13 r25c14 3
+road r25c13 r26c13 5
+road r25c14 r25c15 5
+road r25c14 r26c14 5
+road r25c15 r25c16 4
+road r25c15 r26c15 1
+road r25c16 r25c17 9
+road r25c16 r26c16 6
+road r25c17 r25c18 8
+road r25c17 r26c17 1
+road r25c18 r25c19 5
+road r25c18 r26c18 5
+road r25c19 r25c20 9
+road r25c19 r26c19 5
+road r25c20 r25c21 8
+road r25c20 r26c20 7
+road r25c21 r25c22 8
+road r25c21 r26c21 7
+road r25c22 r25c23 5
+road r25c22 r26c22 9
+road r25c23 r25c24 1
+road r25c23 r26c23 1
+road r25c24 r25c25 1
+road r25c24 r26c24 1
+road r25c25 r25c26 1
+road r25c25 r26c25 3
+road r25c26 r25c27 5
+road r25c26 r26c26 1
+road r25c27 r25c28 3
+road r25c27 r26c27 4
+road r25c28 r25c29 6
+road r25c28 r26c28 4
+road r25c29 r26c29 7
+road r26c0 r26c1 1
+road r26c0 r27c0 6
+road r26c1 r26c2 1
+road r26c1 r27c1 9
+road r26c2 r26c3 9
+road r26c2 r27c2 1
+road r26c3 r26c4 2
+road r26c3 r27c3 2
+road r26c4 r26c5 8
+road r26c4 r27c4 8
+road r26c5 r26c6 6
+road r26c5 r27c5 3
+road r26c6 r26c7 3
+road r26c6 r27c6 8
+road r26c7 r26c8 1
+road r26c7 r27c7 4
+road r26c8 r26c9 3
+road r26c8 r27c8 1
+road r26c9 r26c10 6
+road r26c9 r27c9 6
+road r26c10 r26c11 2
+road r26c10 r27c10 5
+road r26c11 r26c12 5
+road r26c11 r27c11 4
+road r26c12 r26c13 4
+road r26c12 r27c12 8
+road r26c13 r26c14 2
+road r26c13 r27c13 7
+road r26c14 r26c15 7
+road r26c14 r27c14 7
+road r26c15 r26c16 3
+road r26c15 r27c15 6
+road r26c16 r26c17 2
+road r26c16 r27c16 9
+road r26c17 r26c18 6
+road r26c17 r27c17 8
+road r26c18 r26c19 2
+road r26c18 r27c18 2
+road r26c19 r26c20 7
+road r26c19 r27c19 3
+road r26c20 r26c21 3
+road r26c20 r27c20 4
+road r26c21 r26c22 8
+road r26c21 r27c21 5
+road r26c22 r26c23 8
+road r26c22 r27c22 3
+road r26c23 r26c24 2
+road r26c23 r27c23 4
+road r26c24 r26c25 7
+road r26c24 r27c24 6
+road r26c25 r26c26 7
+road r26c25 r27c25 9
+road r26c26 r26c27 3
+road r26c26 r27c26 3
+road r26c27 r26c28 1
+road r26c27 r27c27 7
+road r26c28 r26c29 7
+road r26c28 r27c28 9
+road r26c29 r27c29 1
+road r27c0 r27c1 3
+road r27c0 r28c0 2
+road r27c1 r27c2 9
+road r27c1 r28c1 2
+road r27c2 r27c3 9
+road r27c2 r28c2 1
+road r27c3 r27c4 1
+road r27c3 r28c3 5
+road r27c4 r27c5 7
+road r27c4 r28c4 9
+road r27c5 r27c6 2
+road r27c5 r28c5 1
+road r27c6 r27c7 3
+road r27c6 r28c6 9
+road r27c7 r27c8 7
+road r27c7 r28c7 1
+road r27c8 r27c9 2
+road r27c8 r28c8 8
+road r27c9 r27c10 3
+road r27c9 r28c9 3
+road r27c10 r27c11 9
+road r27c10 r28c10 2
+road r27c11 r27c12 6
+road r27c11 r28c11 9
+road r27c12 r27c13 5
+road r27c12 r28c12 3
+road r27c13 r27c14 7
+road r27c13 r28c13 3
+road r27c14 r27c15 3
+road r27c14 r28c14 3
+road r27c15 r27c16 4
+road r27c15 r28c15 5
+road r27c16 r27c17 8
+road r27c16 r28c16 9
+road r27c17 r27c18 2
+road r27c17 r28c17 5
+road r27c18 r27c19 1
+road r27c18 r28c18 4
+road r27c19 r27c20 1
+road r27c19 r28c19 7
+road r27c20 r27c21 4
+road r27c20 r28c20 8
+road r27c21 r27c22 5
+road r27c21 r28c21 5
+road r27c22 r27c23 5
+road r27c22 r28c22 6
+road r27c23 r27c24 7
+road r27c23 r28c23 4
+road r27c24 r27c25 8
+road r27c24 r28c24 1
+road r27c25 r27c26 3
+road r27c25 r28c25 5
+road r27c26 r27c27 2
+road r27c26 r28c26 1
+road r27c27 r27c28 9
+road r27c27 r28c27 9
+road r27c28 r27c29 6
+road r27c28 r28c28 7
+road r27c29 r28c29 5
+road r28c0 r28c1 6
+road r28c0 r29c0 8
+road r28c1 r28c2 2
+road r28c1 r29c1 1
+road r28c2 r28c3 2
+road r28c2 r29c2 1
+road r28c3 r28c4 5
+road r28c3 r29c3 6
+road r28c4 r28c5 9
+road r28c4 r29c4 3
+road r28c5 r28c6 8
+road r28c5 r29c5 2
+road r28c6 r28c7 3
+road r28c6 r29c6 4
+road r28c7 r28c8 3
+road r28c7 r29c7 1
+road r28c8 r28c9 3
+road r28c8 r29c8 3
+road r28c9 r28c10 1
+road r28c9 r29c9 8
+road r28c10 r28c11 6
+road r28c10 r29c10 4
+road r28c11 r28c12 3
+road r28c11 r29c11 9
+road r28c12 r28c13 2
+road r28c12 r29c12 3
+road r28c13 r28c14 9
+road r28c13 r29c13 4
+road r28c14 r28c15 8
+road r28c14 r29c14 5
+road r28c15 r28c16 1
+road r28c15 r29c15 8
+road r28c16 r28c17 9
+road r28c16 r29c16 2
+road r28c17 r28c18 2
+road r28c17 r29c17 1
+road r28c18 r28c19 5
+road r28c18 r29c18 9
+road r28c19 r28c20 2
+road r28c19 r29c19 3
+road r28c20 r28c21 8
+road r28c20 r29c20 2
+road r28c21 r28c22 4
+road r28c21 r29c21 7
+road r28c22 r28c23 9
+road r28c22 r29c22 2
+road r28c23 r28c24 4
+road r28c23 r29c23 7
+road r28c24 r28c25 1
+road r28c24 r29c24 9
+road r28c25 r28c26 3
+road r28c25 r29c25 8
+road r28c26 r28c27 8
+road r28c26 r29c26 8
+road r28c27 r28c28 4
+road r28c27 r29c27 5
+road r28c28 r28c29 1
+road r28c28 r29c28 9
+road r28c29 r29c29 8
+road r29c0 r29c1 1
+road r29c1 r29c2 9
+road r29c2 r29c3 8
+road r29c3 r29c4 7
+road r29c4 r29c5 2
+road r29c5 r29c6 2
+road r29c6 r29c7 3
+road r29c7 r29c8 8
+road r29c8 r29c9 1
+road r29c9 r29c10 8
+road r29c10 r29c11 6
+road r29c11 r29c12 5
+road r29c12 r29c13 9
+road r29c13 r29c14 3
+road r29c14 r29c15 4
+road r29c15 r29c16 2
+road r29c16 r29c17 8
+road r29c17 r29c18 4
+road r29c18 r29c19 4
+road r29c19 r29c20 9
+road r29c20 r29c21 6
+road r29c21 r29c22 2
+road r29c22 r29c23 8
+road r29c23 r29c24 8
+road r29c24 r29c25 4
+road r29c25 r29c26 8
+road r29c26 r29c27 5
+road r29c27 r29c28 1
+road r29c28 r29c29 4

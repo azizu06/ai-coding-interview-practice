@@ -1,0 +1,11 @@
+{
+  "test_door_is_open_with_key": "True",
+  "test_door_stays_closed_with_wrong_key": "False",
+  "test_neighbors_in_last_column": "[(1, 2), (0, 1)]",
+  "test_neighbors_through_door_with_key": "[(1, 1), (0, 0), (0, 2)]",
+  "test_key_on_the_way": "3",
+  "test_must_detour_for_key": "7",
+  "test_must_backtrack_through_visited_cells": "11",
+  "test_two_keys_chained": "14",
+  "test_example_maze": "14"
+}

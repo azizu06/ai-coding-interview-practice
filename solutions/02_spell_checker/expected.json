@@ -1,0 +1,16 @@
+{
+  "test_punctuation_then_whitespace": "\"hello\"",
+  "test_whitespace_around_quotes": "\"quoted\"",
+  "test_blank_words_are_not_stored": "1",
+  "test_add_blank_word_returns_false": "False",
+  "test_empty_string_is_never_a_word": "False",
+  "test_query_is_normalized": "[\"grape\", \"graph\"]",
+  "test_result_is_sorted_and_unique": "[\"ample\", \"apple\", \"apply\"]",
+  "test_distance_two": "[\"grape\", \"graph\", \"great\"]",
+  "test_blank_query_has_no_suggestions": "[]",
+  "test_small_dictionary": "[\"bebuvo\", \"buvo\"]",
+  "test_medium_20_queries": "34",
+  "test_large_300_queries": "572",
+  "test_huge_3000_queries": "6535",
+  "test_distance_two_200_queries": "973"
+}

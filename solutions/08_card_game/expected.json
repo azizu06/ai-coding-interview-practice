@@ -1,0 +1,12 @@
+{
+  "test_the_wheel_is_a_straight": "5",
+  "test_the_wheel_inside_seven_ranks": "5",
+  "test_four_of_a_suit_is_not_a_flush": "None",
+  "test_four_and_three_is_still_not_a_flush": "None",
+  "test_the_wheel_counts_as_a_straight": "(4, (5,))",
+  "test_flush": "(6, (14, 13, 9, 4, 2))",
+  "test_six_of_a_suit_keeps_the_best_five": "(6, (14, 13, 9, 7, 4))",
+  "test_four_of_a_suit_is_only_a_high_card": "(0, (14, 13, 9, 7, 4))",
+  "test_two_triples_make_a_full_house": "(5, (9, 5))",
+  "test_house_rule_a_flush_beats_a_full_house": "True"
+}
