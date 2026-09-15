@@ -31,7 +31,7 @@ def _read(name):
 
 
 def get_example_items():
-    """The tiny set used in INSTRUCTIONS.md and main.py."""
+    """The tiny set used in README.md and main.py."""
     return [("anvil", 9), ("book", 3), ("cup", 3), ("dish", 4), ("egg", 1), ("fan", 6), ("globe", 5)]
 
 

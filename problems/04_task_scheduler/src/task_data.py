@@ -56,7 +56,7 @@ def _read(name):
 
 
 def get_example_tasks():
-    """The build pipeline used in INSTRUCTIONS.md and main.py."""
+    """The build pipeline used in README.md and main.py."""
     tasks = [("fetch", 2), ("compile", 5), ("lint", 1), ("test", 4), ("package", 2), ("deploy", 3)]
     dependencies = [
         ("compile", "fetch"),

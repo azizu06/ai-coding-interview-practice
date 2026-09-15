@@ -4,7 +4,7 @@ The small and medium files are committed under ../data and are read through
 Deck.parse_hand. The three big sets would be megabytes of text, so they are
 built here from fixed seeds as parsed (rank, suit) cards.
 
-    get_example_hand()   the hand used in INSTRUCTIONS.md and main.py
+    get_example_hand()   the hand used in README.md and main.py
     get_small_hands()    100 hands from a shuffled 52 card deck
     get_medium_hands()   5000 hands from a shuffled 52 card deck
     get_large_hands()    60000 hands from a shuffled 52 card deck

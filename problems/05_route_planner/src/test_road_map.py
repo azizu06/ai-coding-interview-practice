@@ -9,7 +9,7 @@ from road_map import RoadMap  # noqa: E402
 
 
 def example():
-    """The six stop town from INSTRUCTIONS.md. `island` has no roads at all."""
+    """The six stop town from README.md. `island` has no roads at all."""
     stops, roads = get_example_map()
     road_map = RoadMap()
     for stop in stops:

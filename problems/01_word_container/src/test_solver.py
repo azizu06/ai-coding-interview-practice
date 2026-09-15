@@ -77,7 +77,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_medium_500_words(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 73
     #     start = time.perf_counter()
     #     result = Solver(self.medium).find_container_words()
     #     elapsed = time.perf_counter() - start
@@ -87,7 +87,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_large_10000_words(self):
     #     expected_time = 0.5
-    #     expected_count = "????"
+    #     expected_count = 1567
     #     start = time.perf_counter()
     #     result = Solver(self.large).find_container_words()
     #     elapsed = time.perf_counter() - start
@@ -97,7 +97,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_huge_25000_words(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 4305
     #     start = time.perf_counter()
     #     result = Solver(self.huge).find_container_words()
     #     elapsed = time.perf_counter() - start
@@ -107,7 +107,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_long_words(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 6
     #     start = time.perf_counter()
     #     result = Solver(self.long).find_container_words()
     #     elapsed = time.perf_counter() - start

@@ -1,6 +1,6 @@
 """Loaders for the maze data files.
 
-get_example_maze()  the tiny maze from INSTRUCTIONS.md
+get_example_maze()  the tiny maze from README.md
 get_small_maze()    20 x 20, one key
 get_medium_maze()   30 x 30, two keys
 get_large_maze()    120 x 120, three keys

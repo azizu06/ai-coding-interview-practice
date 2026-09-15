@@ -15,7 +15,7 @@ def _read(name, keep_spaces=False):
 
 
 def get_example_words():
-    """The tiny dictionary used in INSTRUCTIONS.md and main.py."""
+    """The tiny dictionary used in README.md and main.py."""
     return ["apple", "apply", "ample", "maple", "grape", "graph", "great", "treat", "tread", "bread"]
 
 

@@ -67,7 +67,7 @@ def _read(name):
 
 
 def get_example_map():
-    """The small town used in INSTRUCTIONS.md and main.py."""
+    """The small town used in README.md and main.py."""
     stops = ["airport", "beach", "campus", "downtown", "harbor", "island"]
     roads = [
         ("airport", "downtown", 20),

@@ -12,7 +12,7 @@ def _read(name):
 
 
 def get_example_words():
-    """The tiny list used in INSTRUCTIONS.md and main.py."""
+    """The tiny list used in README.md and main.py."""
     return ["cat", "concatenate", "dog", "hotdog", "sun", "sunny", "ate", "plate", "ten"]
 
 

@@ -96,7 +96,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_medium_2000_items(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 618
     #     start = time.perf_counter()
     #     boxes = Solver(self.medium).pack(100)
     #     elapsed = time.perf_counter() - start
@@ -106,7 +106,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_large_40000_items(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 12211
     #     start = time.perf_counter()
     #     boxes = Solver(self.large).pack(100)
     #     elapsed = time.perf_counter() - start
@@ -116,7 +116,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_huge_200000_items(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 60999
     #     start = time.perf_counter()
     #     boxes = Solver(self.huge).pack(100)
     #     elapsed = time.perf_counter() - start
@@ -126,7 +126,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_wide_weights_20000_items(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 7044
     #     start = time.perf_counter()
     #     boxes = Solver(self.wide).pack(100000)
     #     elapsed = time.perf_counter() - start

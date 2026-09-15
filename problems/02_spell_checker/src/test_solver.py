@@ -86,7 +86,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_medium_20_queries(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 34
     #     start = time.perf_counter()
     #     total = self.run_queries(self.medium, self.medium_queries, 1)
     #     elapsed = time.perf_counter() - start
@@ -95,7 +95,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_large_300_queries(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 572
     #     start = time.perf_counter()
     #     total = self.run_queries(self.large, self.large_queries, 1)
     #     elapsed = time.perf_counter() - start
@@ -104,7 +104,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_huge_3000_queries(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 6535
     #     start = time.perf_counter()
     #     total = self.run_queries(self.large, self.huge_queries, 1)
     #     elapsed = time.perf_counter() - start
@@ -113,7 +113,7 @@ class TestSolverSpeed(unittest.TestCase):
 
     # def test_distance_two_200_queries(self):
     #     expected_time = 1.0
-    #     expected_count = "????"
+    #     expected_count = 973
     #     start = time.perf_counter()
     #     total = self.run_queries(self.medium, self.distance_two_queries, 2)
     #     elapsed = time.perf_counter() - start

@@ -4,7 +4,7 @@ Only the small log is committed under ../data. The three bigger logs would be
 tens of megabytes of text, so they are rebuilt here from fixed seeds. The same
 seed always produces the same lines.
 
-    get_example_lines()  the tiny log used in INSTRUCTIONS.md and main.py
+    get_example_lines()  the tiny log used in README.md and main.py
     get_small_lines()    2000 requests over 10 minutes
     get_medium_lines()   15000 requests over 1 hour
     get_large_lines()    200000 requests over 4 hours
